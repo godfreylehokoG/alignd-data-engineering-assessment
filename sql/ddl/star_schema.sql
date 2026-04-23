@@ -10,6 +10,9 @@
 -- and column-level encryption on sensitive fields.
 -- ============================================================
 
+-- Drop everything first for a clean start
+DROP SCHEMA IF EXISTS alignd CASCADE;
+
 -- Create schema
 CREATE SCHEMA IF NOT EXISTS alignd;
 
