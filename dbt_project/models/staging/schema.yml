@@ -1,0 +1,60 @@
+# ============================================================
+# Staging Layer: Sources and Tests
+# ============================================================
+
+version: 2
+
+sources:
+  - name: alignd
+    schema: alignd
+    description: "Raw star schema tables loaded by load_to_postgres.py"
+    tables:
+      - name: dim_clients
+        description: "Patient demographics (contains PII)"
+      - name: dim_products
+        description: "Health insurance product catalogue"
+      - name: dim_policy
+        description: "Bridge table linking clients to products"
+      - name: dim_date
+        description: "Calendar dimension"
+      - name: fct_health_lapses
+        description: "Health policy lapse events"
+
+models:
+  - name: stg_clients
+    description: "Deduplicated and income-imputed client data"
+    columns:
+      - name: client_id
+        description: "Unique client identifier"
+        tests:
+          - unique
+          - not_null
+      - name: income
+        description: "Client income (NULLs imputed with province median)"
+        tests:
+          - not_null
+      - name: province
+        tests:
+          - not_null
+
+  - name: stg_products
+    description: "Cleaned product catalogue"
+    columns:
+      - name: product_id
+        tests:
+          - unique
+          - not_null
+
+  - name: stg_health_lapses
+    description: "Enriched lapse records with client and product references"
+    columns:
+      - name: lapse_id
+        tests:
+          - unique
+          - not_null
+      - name: client_id
+        tests:
+          - not_null
+      - name: policy_id
+        tests:
+          - not_null
