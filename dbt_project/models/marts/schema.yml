@@ -1,0 +1,52 @@
+# ============================================================
+# Marts Layer: Business-Ready Models and Tests
+# ============================================================
+
+version: 2
+
+models:
+  - name: dim_patients
+    description: >
+      Patient dimension excluding PII (name) for POPIA compliance.
+      Income NULLs imputed using province-level median.
+      Grain: One row per unique patient.
+    columns:
+      - name: client_id
+        description: "Unique patient identifier"
+        tests:
+          - unique
+          - not_null
+      - name: income
+        description: "Patient income (imputed where NULL)"
+        tests:
+          - not_null
+      - name: province
+        description: "Patient province"
+        tests:
+          - not_null
+          - accepted_values:
+              values: ['Gauteng', 'Western Cape', 'KZN']
+
+  - name: fct_patient_claims_summary
+    description: >
+      Aggregated claims summary per patient. Includes premium
+      totals, lapse counts, and derived lapse rate.
+      Grain: One row per client.
+    columns:
+      - name: client_id
+        description: "Unique patient identifier"
+        tests:
+          - unique
+          - not_null
+      - name: total_premiums
+        description: "Sum of all premium amounts for this client"
+        tests:
+          - not_null
+      - name: total_claims
+        description: "Total number of claim records"
+        tests:
+          - not_null
+      - name: lapse_rate_pct
+        description: "Percentage of claims that lapsed"
+        tests:
+          - not_null
