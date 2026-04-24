@@ -147,3 +147,1554 @@ parsing.
 [0m00:56:48.444539 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F957553E70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F957D63070>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F957A74E20>]}
 [0m00:56:48.444983 [debug] [MainThread]: Flushing usage events
 [0m00:56:50.092347 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m01:05:21.690756 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E044B39BE0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E04196B250>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E0457DEFD0>]}
+
+
+============================== 01:05:21.707854 | 00a91af2-0c48-4645-8c4f-fb4b819b038a ==============================
+[0m01:05:21.707854 [info ] [MainThread]: Running with dbt=1.11.8
+[0m01:05:21.708978 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'False', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'profiles_dir': 'C:\\Users\\Godfrey\\Desktop\\alignd-data-engineering-assessment\\dbt_project', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'invocation_command': 'dbt run', 'indirect_selection': 'eager', 'use_colors': 'True', 'use_experimental_parser': 'False', 'log_path': 'C:\\Users\\Godfrey\\Desktop\\alignd-data-engineering-assessment\\dbt_project\\logs'}
+[0m01:05:22.058470 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '00a91af2-0c48-4645-8c4f-fb4b819b038a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E0452382B0>]}
+[0m01:05:22.147628 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '00a91af2-0c48-4645-8c4f-fb4b819b038a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E046F6A030>]}
+[0m01:05:22.149637 [info ] [MainThread]: Registered adapter: postgres=1.10.0
+[0m01:05:22.582299 [debug] [MainThread]: checksum: 7d524ac048c2100769df89d592e662e060a73ca564e31bd9c2a37efdfe8d8ab6, vars: {}, profile: , target: , version: 1.11.8
+[0m01:05:22.583890 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m01:05:22.584652 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '00a91af2-0c48-4645-8c4f-fb4b819b038a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E045DCF950>]}
+[0m01:05:24.152399 [warn ] [MainThread]: [[33mWARNING[0m][MissingArgumentsPropertyInGenericTestDeprecation]: Deprecated
+functionality
+Found top-level arguments to test `accepted_values` defined on 'dim_patients' in
+package 'alignd_de_project' (models\marts\schema.yml). Arguments to generic
+tests should be nested under the `arguments` property.
+[0m01:05:24.153271 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'deprecation', 'label': '00a91af2-0c48-4645-8c4f-fb4b819b038a', 'property_': 'warn', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E04755A030>]}
+[0m01:05:24.458545 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '00a91af2-0c48-4645-8c4f-fb4b819b038a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E0475BB850>]}
+[0m01:05:24.580721 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\Godfrey\Desktop\alignd-data-engineering-assessment\dbt_project\target\manifest.json
+[0m01:05:24.585193 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\Godfrey\Desktop\alignd-data-engineering-assessment\dbt_project\target\semantic_manifest.json
+[0m01:05:24.773520 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '00a91af2-0c48-4645-8c4f-fb4b819b038a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E047553860>]}
+[0m01:05:24.774355 [info ] [MainThread]: Found 5 models, 20 data tests, 5 sources, 465 macros
+[0m01:05:24.776484 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '00a91af2-0c48-4645-8c4f-fb4b819b038a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E0475F7B90>]}
+[0m01:05:24.782673 [info ] [MainThread]: 
+[0m01:05:24.786280 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m01:05:24.793548 [info ] [MainThread]: 
+[0m01:05:24.800245 [debug] [MainThread]: Acquiring new postgres connection 'master'
+[0m01:05:24.815061 [debug] [ThreadPool]: Acquiring new postgres connection 'list_alignd_db'
+[0m01:05:24.838281 [debug] [ThreadPool]: Acquiring new postgres connection 'list_alignd_db'
+[0m01:05:25.107919 [debug] [ThreadPool]: Using postgres connection "list_alignd_db"
+[0m01:05:25.108579 [debug] [ThreadPool]: Using postgres connection "list_alignd_db"
+[0m01:05:25.109401 [debug] [ThreadPool]: On list_alignd_db: /* {"app": "dbt", "dbt_version": "1.11.8", "profile_name": "alignd_profile", "target_name": "dev", "connection_name": "list_alignd_db"} */
+
+    select distinct nspname from pg_namespace
+  
+[0m01:05:25.110263 [debug] [ThreadPool]: On list_alignd_db: /* {"app": "dbt", "dbt_version": "1.11.8", "profile_name": "alignd_profile", "target_name": "dev", "connection_name": "list_alignd_db"} */
+
+    select distinct nspname from pg_namespace
+  
+[0m01:05:25.111141 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m01:05:25.112729 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m01:05:25.245954 [debug] [ThreadPool]: SQL status: SELECT 5 in 0.133 seconds
+[0m01:05:25.246602 [debug] [ThreadPool]: SQL status: SELECT 5 in 0.136 seconds
+[0m01:05:25.248374 [debug] [ThreadPool]: On list_alignd_db: Close
+[0m01:05:25.249932 [debug] [ThreadPool]: On list_alignd_db: Close
+[0m01:05:25.251584 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_alignd_db, now create_alignd_db_alignd_staging)
+[0m01:05:25.252501 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_alignd_db, now create_alignd_db_alignd_marts)
+[0m01:05:25.253712 [debug] [ThreadPool]: Creating schema "database: "alignd_db"
+schema: "alignd_staging"
+"
+[0m01:05:25.254835 [debug] [ThreadPool]: Creating schema "database: "alignd_db"
+schema: "alignd_marts"
+"
+[0m01:05:25.262026 [debug] [ThreadPool]: Using postgres connection "create_alignd_db_alignd_staging"
+[0m01:05:25.264308 [debug] [ThreadPool]: Using postgres connection "create_alignd_db_alignd_marts"
+[0m01:05:25.264812 [debug] [ThreadPool]: On create_alignd_db_alignd_staging: /* {"app": "dbt", "dbt_version": "1.11.8", "profile_name": "alignd_profile", "target_name": "dev", "connection_name": "create_alignd_db_alignd_staging"} */
+create schema if not exists "alignd_staging"
+[0m01:05:25.265313 [debug] [ThreadPool]: On create_alignd_db_alignd_marts: /* {"app": "dbt", "dbt_version": "1.11.8", "profile_name": "alignd_profile", "target_name": "dev", "connection_name": "create_alignd_db_alignd_marts"} */
+create schema if not exists "alignd_marts"
+[0m01:05:25.265941 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m01:05:25.266354 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m01:05:25.303550 [debug] [ThreadPool]: SQL status: CREATE SCHEMA in 0.037 seconds
+[0m01:05:25.304023 [debug] [ThreadPool]: SQL status: CREATE SCHEMA in 0.038 seconds
+[0m01:05:25.305472 [debug] [ThreadPool]: On create_alignd_db_alignd_marts: COMMIT
+[0m01:05:25.307489 [debug] [ThreadPool]: On create_alignd_db_alignd_staging: COMMIT
+[0m01:05:25.308386 [debug] [ThreadPool]: Using postgres connection "create_alignd_db_alignd_marts"
+[0m01:05:25.309191 [debug] [ThreadPool]: Using postgres connection "create_alignd_db_alignd_staging"
+[0m01:05:25.309997 [debug] [ThreadPool]: On create_alignd_db_alignd_marts: COMMIT
+[0m01:05:25.310770 [debug] [ThreadPool]: On create_alignd_db_alignd_staging: COMMIT
+[0m01:05:25.325485 [debug] [ThreadPool]: SQL status: COMMIT in 0.014 seconds
+[0m01:05:25.326147 [debug] [ThreadPool]: On create_alignd_db_alignd_staging: Close
+[0m01:05:25.328314 [debug] [ThreadPool]: SQL status: COMMIT in 0.017 seconds
+[0m01:05:25.329070 [debug] [ThreadPool]: On create_alignd_db_alignd_marts: Close
+[0m01:05:25.333742 [debug] [ThreadPool]: Acquiring new postgres connection 'list_alignd_db_alignd_staging'
+[0m01:05:25.347162 [debug] [ThreadPool]: Using postgres connection "list_alignd_db_alignd_staging"
+[0m01:05:25.348154 [debug] [ThreadPool]: Acquiring new postgres connection 'list_alignd_db_alignd_marts'
+[0m01:05:25.349068 [debug] [ThreadPool]: On list_alignd_db_alignd_staging: /* {"app": "dbt", "dbt_version": "1.11.8", "profile_name": "alignd_profile", "target_name": "dev", "connection_name": "list_alignd_db_alignd_staging"} */
+select
+      'alignd_db' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'alignd_staging'
+    union all
+    select
+      'alignd_db' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'alignd_staging'
+    union all
+    select
+      'alignd_db' as database,
+      matviewname as name,
+      schemaname as schema,
+      'materialized_view' as type
+    from pg_matviews
+    where schemaname ilike 'alignd_staging'
+  
+[0m01:05:25.352212 [debug] [ThreadPool]: Using postgres connection "list_alignd_db_alignd_marts"
+[0m01:05:25.352940 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m01:05:25.353587 [debug] [ThreadPool]: On list_alignd_db_alignd_marts: /* {"app": "dbt", "dbt_version": "1.11.8", "profile_name": "alignd_profile", "target_name": "dev", "connection_name": "list_alignd_db_alignd_marts"} */
+select
+      'alignd_db' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'alignd_marts'
+    union all
+    select
+      'alignd_db' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'alignd_marts'
+    union all
+    select
+      'alignd_db' as database,
+      matviewname as name,
+      schemaname as schema,
+      'materialized_view' as type
+    from pg_matviews
+    where schemaname ilike 'alignd_marts'
+  
+[0m01:05:25.354258 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m01:05:25.446954 [debug] [ThreadPool]: SQL status: SELECT 0 in 0.093 seconds
+[0m01:05:25.450766 [debug] [ThreadPool]: On list_alignd_db_alignd_marts: ROLLBACK
+[0m01:05:25.452255 [debug] [ThreadPool]: SQL status: SELECT 0 in 0.099 seconds
+[0m01:05:25.454420 [debug] [ThreadPool]: On list_alignd_db_alignd_staging: ROLLBACK
+[0m01:05:25.455153 [debug] [ThreadPool]: On list_alignd_db_alignd_marts: Close
+[0m01:05:25.457365 [debug] [ThreadPool]: On list_alignd_db_alignd_staging: Close
+[0m01:05:25.465513 [debug] [MainThread]: Using postgres connection "master"
+[0m01:05:25.466464 [debug] [MainThread]: On master: /* {"app": "dbt", "dbt_version": "1.11.8", "profile_name": "alignd_profile", "target_name": "dev", "connection_name": "master"} */
+select distinct
+        dependent_namespace.nspname as dependent_schema,
+        dependent_class.relname as dependent_name,
+        referenced_namespace.nspname as referenced_schema,
+        referenced_class.relname as referenced_name
+
+    -- Query for views: views are entries in pg_class with an entry in pg_rewrite, but we avoid
+    -- a seq scan on pg_rewrite by leveraging the fact there is an "internal" row in pg_depend for
+    -- the view...
+    from pg_class as dependent_class
+    join pg_namespace as dependent_namespace on dependent_namespace.oid = dependent_class.relnamespace
+    join pg_depend as dependent_depend on dependent_depend.refobjid = dependent_class.oid
+        and dependent_depend.classid = 'pg_rewrite'::regclass
+        and dependent_depend.refclassid = 'pg_class'::regclass
+        and dependent_depend.deptype = 'i'
+
+    -- ... and via pg_depend (that has a row per column, hence the need for "distinct" above, and
+    -- making sure to exclude the internal row to avoid a view appearing to depend on itself)...
+    join pg_depend as joining_depend on joining_depend.objid = dependent_depend.objid
+        and joining_depend.classid = 'pg_rewrite'::regclass
+        and joining_depend.refclassid = 'pg_class'::regclass
+        and joining_depend.refobjid != dependent_depend.refobjid
+
+    -- ... we can find the tables they query from in pg_class, but excluding system tables. Note we
+    -- don't need need to exclude _dependent_ system tables, because they only query from other
+    -- system tables, and so are automatically excluded by excluding _referenced_ system tables
+    join pg_class as referenced_class on referenced_class.oid = joining_depend.refobjid
+    join pg_namespace as referenced_namespace on referenced_namespace.oid = referenced_class.relnamespace
+        and referenced_namespace.nspname != 'information_schema'
+        and referenced_namespace.nspname not like 'pg\_%'
+
+    order by
+        dependent_schema, dependent_name, referenced_schema, referenced_name;
+[0m01:05:25.467969 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m01:05:25.541606 [debug] [MainThread]: SQL status: SELECT 8 in 0.074 seconds
+[0m01:05:25.545574 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '00a91af2-0c48-4645-8c4f-fb4b819b038a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E047542360>]}
+[0m01:05:25.546742 [debug] [MainThread]: On master: ROLLBACK
+[0m01:05:25.549421 [debug] [MainThread]: On master: COMMIT
+[0m01:05:25.550098 [debug] [MainThread]: Using postgres connection "master"
+[0m01:05:25.550668 [debug] [MainThread]: On master: COMMIT
+[0m01:05:25.553741 [debug] [MainThread]: SQL status: COMMIT in 0.002 seconds
+[0m01:05:25.554428 [debug] [MainThread]: On master: Close
+[0m01:05:25.611449 [debug] [Thread-2 (]: Began running node model.alignd_de_project.stg_health_lapses
+[0m01:05:25.612321 [debug] [Thread-1 (]: Began running node model.alignd_de_project.stg_clients
+[0m01:05:25.613349 [debug] [Thread-3 (]: Began running node model.alignd_de_project.stg_products
+[0m01:05:25.614499 [info ] [Thread-2 (]: 2 of 5 START sql view model alignd_staging.stg_health_lapses ................... [RUN]
+[0m01:05:25.622129 [debug] [Thread-2 (]: Acquiring new postgres connection 'model.alignd_de_project.stg_health_lapses'
+[0m01:05:25.623031 [debug] [Thread-2 (]: Began compiling node model.alignd_de_project.stg_health_lapses
+[0m01:05:25.643222 [debug] [Thread-2 (]: Writing injected SQL for node "model.alignd_de_project.stg_health_lapses"
+[0m01:05:25.647795 [debug] [Thread-2 (]: Began executing node model.alignd_de_project.stg_health_lapses
+[0m01:05:25.615422 [info ] [Thread-1 (]: 1 of 5 START sql view model alignd_staging.stg_clients ......................... [RUN]
+[0m01:05:25.665921 [debug] [Thread-1 (]: Acquiring new postgres connection 'model.alignd_de_project.stg_clients'
+[0m01:05:25.667036 [debug] [Thread-1 (]: Began compiling node model.alignd_de_project.stg_clients
+[0m01:05:25.684431 [debug] [Thread-1 (]: Writing injected SQL for node "model.alignd_de_project.stg_clients"
+[0m01:05:25.616327 [info ] [Thread-3 (]: 3 of 5 START sql view model alignd_staging.stg_products ........................ [RUN]
+[0m01:05:25.716269 [debug] [Thread-3 (]: Acquiring new postgres connection 'model.alignd_de_project.stg_products'
+[0m01:05:25.717559 [debug] [Thread-3 (]: Began compiling node model.alignd_de_project.stg_products
+[0m01:05:25.724309 [debug] [Thread-3 (]: Writing injected SQL for node "model.alignd_de_project.stg_products"
+[0m01:05:25.756315 [debug] [Thread-2 (]: Writing runtime sql for node "model.alignd_de_project.stg_health_lapses"
+[0m01:05:25.760654 [debug] [Thread-2 (]: Using postgres connection "model.alignd_de_project.stg_health_lapses"
+[0m01:05:25.761672 [debug] [Thread-1 (]: Began executing node model.alignd_de_project.stg_clients
+[0m01:05:25.762634 [debug] [Thread-2 (]: On model.alignd_de_project.stg_health_lapses: /* {"app": "dbt", "dbt_version": "1.11.8", "profile_name": "alignd_profile", "target_name": "dev", "node_id": "model.alignd_de_project.stg_health_lapses"} */
+
+  create view "alignd_db"."alignd_staging"."stg_health_lapses__dbt_tmp"
+    
+    
+  as (
+    SELECT
+    f.lapse_id,
+    f.policy_id,
+    p.client_id,
+    p.product_id,
+    f.lapse_date,
+    f.date_key,
+    f.premium_amount,
+    f.status AS lapse_status
+FROM "alignd_db"."alignd"."fct_health_lapses" f
+INNER JOIN "alignd_db"."alignd"."dim_policy" p
+    ON f.policy_id = p.policy_id
+  );
+[0m01:05:25.763528 [debug] [Thread-3 (]: Began executing node model.alignd_de_project.stg_products
+[0m01:05:25.769250 [debug] [Thread-1 (]: Writing runtime sql for node "model.alignd_de_project.stg_clients"
+[0m01:05:25.770159 [debug] [Thread-2 (]: Opening a new connection, currently in state init
+[0m01:05:25.776061 [debug] [Thread-3 (]: Writing runtime sql for node "model.alignd_de_project.stg_products"
+[0m01:05:25.778600 [debug] [Thread-1 (]: Using postgres connection "model.alignd_de_project.stg_clients"
+[0m01:05:25.779581 [debug] [Thread-1 (]: On model.alignd_de_project.stg_clients: /* {"app": "dbt", "dbt_version": "1.11.8", "profile_name": "alignd_profile", "target_name": "dev", "node_id": "model.alignd_de_project.stg_clients"} */
+
+  create view "alignd_db"."alignd_staging"."stg_clients__dbt_tmp"
+    
+    
+  as (
+    -- ============================================================
+-- Staging: Clients
+-- Source: alignd.dim_clients
+--
+-- Deduplicates by client_id and imputes NULL income
+-- using province-level median (see AD-002, AD-003 in TDR)
+-- ============================================================
+
+WITH deduplicated AS (
+    SELECT
+        *,
+        ROW_NUMBER() OVER (
+            PARTITION BY client_id
+            ORDER BY client_id
+        ) AS rn
+    FROM "alignd_db"."alignd"."dim_clients"
+),
+
+unique_clients AS (
+    SELECT
+        client_id,
+        name,
+        income,
+        province
+    FROM deduplicated
+    WHERE rn = 1
+),
+
+-- AD-002: Province-level median for NULL income imputation
+-- Median chosen over mean because income is right-skewed
+province_medians AS (
+    SELECT
+        province,
+        PERCENTILE_CONT(0.5) WITHIN GROUP (ORDER BY income) AS median_income
+    FROM unique_clients
+    WHERE income IS NOT NULL
+    GROUP BY province
+)
+
+SELECT
+    c.client_id,
+    -- PII: name excluded from downstream models (POPIA)
+    c.name,
+    COALESCE(c.income, pm.median_income) AS income,
+    c.income IS NULL AS income_was_imputed,
+    c.province
+FROM unique_clients c
+LEFT JOIN province_medians pm
+    ON c.province = pm.province
+  );
+[0m01:05:25.781032 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m01:05:25.782765 [debug] [Thread-3 (]: Using postgres connection "model.alignd_de_project.stg_products"
+[0m01:05:25.783762 [debug] [Thread-3 (]: On model.alignd_de_project.stg_products: /* {"app": "dbt", "dbt_version": "1.11.8", "profile_name": "alignd_profile", "target_name": "dev", "node_id": "model.alignd_de_project.stg_products"} */
+
+  create view "alignd_db"."alignd_staging"."stg_products__dbt_tmp"
+    
+    
+  as (
+    -- ============================================================
+-- Staging: Products
+-- Source: alignd.dim_products
+--
+-- Product IDs already standardized to lowercase in Task 2
+-- ============================================================
+
+SELECT
+    product_id,
+    product_name,
+    tier,
+    status AS product_status
+FROM "alignd_db"."alignd"."dim_products"
+  );
+[0m01:05:25.784768 [debug] [Thread-3 (]: Opening a new connection, currently in state init
+[0m01:05:25.869686 [debug] [Thread-2 (]: SQL status: CREATE VIEW in 0.100 seconds
+[0m01:05:25.870252 [debug] [Thread-3 (]: SQL status: CREATE VIEW in 0.086 seconds
+[0m01:05:25.876868 [debug] [Thread-2 (]: Using postgres connection "model.alignd_de_project.stg_health_lapses"
+[0m01:05:25.877491 [debug] [Thread-1 (]: SQL status: CREATE VIEW in 0.097 seconds
+[0m01:05:25.882700 [debug] [Thread-3 (]: Using postgres connection "model.alignd_de_project.stg_products"
+[0m01:05:25.883544 [debug] [Thread-2 (]: On model.alignd_de_project.stg_health_lapses: /* {"app": "dbt", "dbt_version": "1.11.8", "profile_name": "alignd_profile", "target_name": "dev", "node_id": "model.alignd_de_project.stg_health_lapses"} */
+alter table "alignd_db"."alignd_staging"."stg_health_lapses__dbt_tmp" rename to "stg_health_lapses"
+[0m01:05:25.888139 [debug] [Thread-1 (]: Using postgres connection "model.alignd_de_project.stg_clients"
+[0m01:05:25.888953 [debug] [Thread-3 (]: On model.alignd_de_project.stg_products: /* {"app": "dbt", "dbt_version": "1.11.8", "profile_name": "alignd_profile", "target_name": "dev", "node_id": "model.alignd_de_project.stg_products"} */
+alter table "alignd_db"."alignd_staging"."stg_products__dbt_tmp" rename to "stg_products"
+[0m01:05:25.889866 [debug] [Thread-1 (]: On model.alignd_de_project.stg_clients: /* {"app": "dbt", "dbt_version": "1.11.8", "profile_name": "alignd_profile", "target_name": "dev", "node_id": "model.alignd_de_project.stg_clients"} */
+alter table "alignd_db"."alignd_staging"."stg_clients__dbt_tmp" rename to "stg_clients"
+[0m01:05:25.896452 [debug] [Thread-2 (]: SQL status: ALTER TABLE in 0.007 seconds
+[0m01:05:25.897283 [debug] [Thread-3 (]: SQL status: ALTER TABLE in 0.006 seconds
+[0m01:05:25.897802 [debug] [Thread-1 (]: SQL status: ALTER TABLE in 0.007 seconds
+[0m01:05:25.916089 [debug] [Thread-2 (]: On model.alignd_de_project.stg_health_lapses: COMMIT
+[0m01:05:25.917984 [debug] [Thread-3 (]: On model.alignd_de_project.stg_products: COMMIT
+[0m01:05:25.919613 [debug] [Thread-1 (]: On model.alignd_de_project.stg_clients: COMMIT
+[0m01:05:25.920239 [debug] [Thread-2 (]: Using postgres connection "model.alignd_de_project.stg_health_lapses"
+[0m01:05:25.920749 [debug] [Thread-3 (]: Using postgres connection "model.alignd_de_project.stg_products"
+[0m01:05:25.921253 [debug] [Thread-1 (]: Using postgres connection "model.alignd_de_project.stg_clients"
+[0m01:05:25.921800 [debug] [Thread-2 (]: On model.alignd_de_project.stg_health_lapses: COMMIT
+[0m01:05:25.922455 [debug] [Thread-3 (]: On model.alignd_de_project.stg_products: COMMIT
+[0m01:05:25.923085 [debug] [Thread-1 (]: On model.alignd_de_project.stg_clients: COMMIT
+[0m01:05:25.932704 [debug] [Thread-2 (]: SQL status: COMMIT in 0.009 seconds
+[0m01:05:25.933247 [debug] [Thread-3 (]: SQL status: COMMIT in 0.010 seconds
+[0m01:05:25.933654 [debug] [Thread-1 (]: SQL status: COMMIT in 0.010 seconds
+[0m01:05:25.940737 [debug] [Thread-2 (]: Applying DROP to: "alignd_db"."alignd_staging"."stg_health_lapses__dbt_backup"
+[0m01:05:25.943747 [debug] [Thread-3 (]: Applying DROP to: "alignd_db"."alignd_staging"."stg_products__dbt_backup"
+[0m01:05:25.946630 [debug] [Thread-1 (]: Applying DROP to: "alignd_db"."alignd_staging"."stg_clients__dbt_backup"
+[0m01:05:25.952738 [debug] [Thread-2 (]: Using postgres connection "model.alignd_de_project.stg_health_lapses"
+[0m01:05:25.953707 [debug] [Thread-3 (]: Using postgres connection "model.alignd_de_project.stg_products"
+[0m01:05:25.954537 [debug] [Thread-1 (]: Using postgres connection "model.alignd_de_project.stg_clients"
+[0m01:05:25.954994 [debug] [Thread-2 (]: On model.alignd_de_project.stg_health_lapses: /* {"app": "dbt", "dbt_version": "1.11.8", "profile_name": "alignd_profile", "target_name": "dev", "node_id": "model.alignd_de_project.stg_health_lapses"} */
+drop view if exists "alignd_db"."alignd_staging"."stg_health_lapses__dbt_backup" cascade
+[0m01:05:25.955454 [debug] [Thread-3 (]: On model.alignd_de_project.stg_products: /* {"app": "dbt", "dbt_version": "1.11.8", "profile_name": "alignd_profile", "target_name": "dev", "node_id": "model.alignd_de_project.stg_products"} */
+drop view if exists "alignd_db"."alignd_staging"."stg_products__dbt_backup" cascade
+[0m01:05:25.955859 [debug] [Thread-1 (]: On model.alignd_de_project.stg_clients: /* {"app": "dbt", "dbt_version": "1.11.8", "profile_name": "alignd_profile", "target_name": "dev", "node_id": "model.alignd_de_project.stg_clients"} */
+drop view if exists "alignd_db"."alignd_staging"."stg_clients__dbt_backup" cascade
+[0m01:05:25.961030 [debug] [Thread-2 (]: SQL status: DROP VIEW in 0.005 seconds
+[0m01:05:25.961773 [debug] [Thread-1 (]: SQL status: DROP VIEW in 0.005 seconds
+[0m01:05:25.964276 [debug] [Thread-2 (]: On model.alignd_de_project.stg_health_lapses: Close
+[0m01:05:25.964727 [debug] [Thread-3 (]: SQL status: DROP VIEW in 0.008 seconds
+[0m01:05:25.966474 [debug] [Thread-1 (]: On model.alignd_de_project.stg_clients: Close
+[0m01:05:25.969420 [debug] [Thread-3 (]: On model.alignd_de_project.stg_products: Close
+[0m01:05:25.974995 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '00a91af2-0c48-4645-8c4f-fb4b819b038a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E047D9D9F0>]}
+[0m01:05:25.975771 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '00a91af2-0c48-4645-8c4f-fb4b819b038a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E047D1B0B0>]}
+[0m01:05:25.977926 [debug] [Thread-3 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '00a91af2-0c48-4645-8c4f-fb4b819b038a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E0451A9550>]}
+[0m01:05:25.976854 [info ] [Thread-2 (]: 2 of 5 OK created sql view model alignd_staging.stg_health_lapses .............. [[32mCREATE VIEW[0m in 0.35s]
+[0m01:05:25.982256 [debug] [Thread-2 (]: Finished running node model.alignd_de_project.stg_health_lapses
+[0m01:05:25.979695 [info ] [Thread-1 (]: 1 of 5 OK created sql view model alignd_staging.stg_clients .................... [[32mCREATE VIEW[0m in 0.31s]
+[0m01:05:25.984381 [debug] [Thread-1 (]: Finished running node model.alignd_de_project.stg_clients
+[0m01:05:25.980798 [info ] [Thread-3 (]: 3 of 5 OK created sql view model alignd_staging.stg_products ................... [[32mCREATE VIEW[0m in 0.26s]
+[0m01:05:25.985612 [debug] [Thread-3 (]: Finished running node model.alignd_de_project.stg_products
+[0m01:05:25.986306 [debug] [Thread-4 (]: Began running node model.alignd_de_project.dim_patients
+[0m01:05:25.986871 [info ] [Thread-4 (]: 4 of 5 START sql table model alignd_marts.dim_patients ......................... [RUN]
+[0m01:05:25.988144 [debug] [Thread-4 (]: Acquiring new postgres connection 'model.alignd_de_project.dim_patients'
+[0m01:05:25.988773 [debug] [Thread-4 (]: Began compiling node model.alignd_de_project.dim_patients
+[0m01:05:25.992350 [debug] [Thread-4 (]: Writing injected SQL for node "model.alignd_de_project.dim_patients"
+[0m01:05:25.994387 [debug] [Thread-4 (]: Began executing node model.alignd_de_project.dim_patients
+[0m01:05:26.041870 [debug] [Thread-4 (]: Writing runtime sql for node "model.alignd_de_project.dim_patients"
+[0m01:05:26.044192 [debug] [Thread-4 (]: Using postgres connection "model.alignd_de_project.dim_patients"
+[0m01:05:26.046118 [debug] [Thread-4 (]: On model.alignd_de_project.dim_patients: /* {"app": "dbt", "dbt_version": "1.11.8", "profile_name": "alignd_profile", "target_name": "dev", "node_id": "model.alignd_de_project.dim_patients"} */
+
+  
+    
+
+  create  table "alignd_db"."alignd_marts"."dim_patients__dbt_tmp"
+  
+  
+    as
+  
+  (
+    -- ============================================================
+-- Dimension: Patients
+-- Source: stg_clients
+--
+-- POPIA Compliance: This model deliberately excludes the
+-- 'name' field to minimize PII exposure in the analytical
+-- layer. Analysts can request PII access through the
+-- Data Engineering team if approved.
+--
+-- Grain: One row per unique patient
+-- ============================================================
+
+SELECT
+    client_id,
+    -- AD-007: name intentionally excluded (POPIA compliance)
+    income,
+    income_was_imputed,
+    province
+FROM "alignd_db"."alignd_staging"."stg_clients"
+  );
+  
+[0m01:05:26.049601 [debug] [Thread-4 (]: Opening a new connection, currently in state init
+[0m01:05:26.088128 [debug] [Thread-4 (]: SQL status: SELECT 8 in 0.039 seconds
+[0m01:05:26.094962 [debug] [Thread-4 (]: Using postgres connection "model.alignd_de_project.dim_patients"
+[0m01:05:26.095455 [debug] [Thread-4 (]: On model.alignd_de_project.dim_patients: /* {"app": "dbt", "dbt_version": "1.11.8", "profile_name": "alignd_profile", "target_name": "dev", "node_id": "model.alignd_de_project.dim_patients"} */
+alter table "alignd_db"."alignd_marts"."dim_patients__dbt_tmp" rename to "dim_patients"
+[0m01:05:26.097457 [debug] [Thread-4 (]: SQL status: ALTER TABLE in 0.001 seconds
+[0m01:05:26.099175 [debug] [Thread-4 (]: On model.alignd_de_project.dim_patients: COMMIT
+[0m01:05:26.099665 [debug] [Thread-4 (]: Using postgres connection "model.alignd_de_project.dim_patients"
+[0m01:05:26.100101 [debug] [Thread-4 (]: On model.alignd_de_project.dim_patients: COMMIT
+[0m01:05:26.104863 [debug] [Thread-4 (]: SQL status: COMMIT in 0.004 seconds
+[0m01:05:26.107679 [debug] [Thread-4 (]: Applying DROP to: "alignd_db"."alignd_marts"."dim_patients__dbt_backup"
+[0m01:05:26.111912 [debug] [Thread-4 (]: Using postgres connection "model.alignd_de_project.dim_patients"
+[0m01:05:26.112461 [debug] [Thread-4 (]: On model.alignd_de_project.dim_patients: /* {"app": "dbt", "dbt_version": "1.11.8", "profile_name": "alignd_profile", "target_name": "dev", "node_id": "model.alignd_de_project.dim_patients"} */
+drop table if exists "alignd_db"."alignd_marts"."dim_patients__dbt_backup" cascade
+[0m01:05:26.114220 [debug] [Thread-4 (]: SQL status: DROP TABLE in 0.001 seconds
+[0m01:05:26.115816 [debug] [Thread-4 (]: On model.alignd_de_project.dim_patients: Close
+[0m01:05:26.116725 [debug] [Thread-4 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '00a91af2-0c48-4645-8c4f-fb4b819b038a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E0478F14F0>]}
+[0m01:05:26.117903 [info ] [Thread-4 (]: 4 of 5 OK created sql table model alignd_marts.dim_patients .................... [[32mSELECT 8[0m in 0.13s]
+[0m01:05:26.119136 [debug] [Thread-4 (]: Finished running node model.alignd_de_project.dim_patients
+[0m01:05:26.120193 [debug] [Thread-2 (]: Began running node model.alignd_de_project.fct_patient_claims_summary
+[0m01:05:26.120970 [info ] [Thread-2 (]: 5 of 5 START sql table model alignd_marts.fct_patient_claims_summary ........... [RUN]
+[0m01:05:26.121900 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly model.alignd_de_project.stg_health_lapses, now model.alignd_de_project.fct_patient_claims_summary)
+[0m01:05:26.122444 [debug] [Thread-2 (]: Began compiling node model.alignd_de_project.fct_patient_claims_summary
+[0m01:05:26.125895 [debug] [Thread-2 (]: Writing injected SQL for node "model.alignd_de_project.fct_patient_claims_summary"
+[0m01:05:26.127509 [debug] [Thread-2 (]: Began executing node model.alignd_de_project.fct_patient_claims_summary
+[0m01:05:26.132766 [debug] [Thread-2 (]: Writing runtime sql for node "model.alignd_de_project.fct_patient_claims_summary"
+[0m01:05:26.134968 [debug] [Thread-2 (]: Using postgres connection "model.alignd_de_project.fct_patient_claims_summary"
+[0m01:05:26.136973 [debug] [Thread-2 (]: On model.alignd_de_project.fct_patient_claims_summary: /* {"app": "dbt", "dbt_version": "1.11.8", "profile_name": "alignd_profile", "target_name": "dev", "node_id": "model.alignd_de_project.fct_patient_claims_summary"} */
+
+  
+    
+
+  create  table "alignd_db"."alignd_marts"."fct_patient_claims_summary__dbt_tmp"
+  
+  
+    as
+  
+  (
+    -- ============================================================
+-- Fact: Patient Claims Summary
+-- Sources: stg_health_lapses, stg_clients, stg_products
+--
+-- Grain: One row per client
+-- Measures: Total premiums, policy count, lapse count,
+--           average premium, latest lapse date
+--
+-- This model provides a single view of each patient's
+-- claims activity for downstream reporting and analytics.
+-- ============================================================
+
+WITH lapse_details AS (
+    SELECT
+        l.client_id,
+        l.policy_id,
+        l.premium_amount,
+        l.lapse_status,
+        l.lapse_date,
+        l.product_id
+    FROM "alignd_db"."alignd_staging"."stg_health_lapses" l
+),
+
+-- Aggregate to one row per client
+patient_summary AS (
+    SELECT
+        client_id,
+
+        -- Policy metrics
+        COUNT(DISTINCT policy_id) AS total_policies,
+        COUNT(*) AS total_claims,
+
+        -- Premium metrics
+        SUM(premium_amount) AS total_premiums,
+        AVG(premium_amount) AS avg_premium,
+        MIN(premium_amount) AS min_premium,
+        MAX(premium_amount) AS max_premium,
+
+        -- Lapse metrics
+        SUM(CASE WHEN lapse_status = 'Lapsed' THEN 1 ELSE 0 END) AS lapsed_count,
+        SUM(CASE WHEN lapse_status = 'Active' THEN 1 ELSE 0 END) AS active_count,
+        SUM(CASE WHEN lapse_status = 'Pending' THEN 1 ELSE 0 END) AS pending_count,
+
+        -- Date metrics
+        MIN(lapse_date) AS first_claim_date,
+        MAX(lapse_date) AS latest_claim_date,
+
+        -- Product diversity
+        COUNT(DISTINCT product_id) AS distinct_products
+
+    FROM lapse_details
+    GROUP BY client_id
+)
+
+SELECT
+    ps.client_id,
+    p.income,
+    p.province,
+    ps.total_policies,
+    ps.total_claims,
+    ps.total_premiums,
+    ROUND(ps.avg_premium, 2) AS avg_premium,
+    ps.min_premium,
+    ps.max_premium,
+    ps.lapsed_count,
+    ps.active_count,
+    ps.pending_count,
+    ps.first_claim_date,
+    ps.latest_claim_date,
+    ps.distinct_products,
+
+    -- Derived: Lapse rate per client
+    ROUND(
+        ps.lapsed_count::NUMERIC / NULLIF(ps.total_claims, 0) * 100, 2
+    ) AS lapse_rate_pct
+
+FROM patient_summary ps
+INNER JOIN "alignd_db"."alignd_marts"."dim_patients" p
+    ON ps.client_id = p.client_id
+  );
+  
+[0m01:05:26.139124 [debug] [Thread-2 (]: Opening a new connection, currently in state closed
+[0m01:05:26.230303 [debug] [Thread-2 (]: SQL status: SELECT 8 in 0.091 seconds
+[0m01:05:26.236388 [debug] [Thread-2 (]: Using postgres connection "model.alignd_de_project.fct_patient_claims_summary"
+[0m01:05:26.237954 [debug] [Thread-2 (]: On model.alignd_de_project.fct_patient_claims_summary: /* {"app": "dbt", "dbt_version": "1.11.8", "profile_name": "alignd_profile", "target_name": "dev", "node_id": "model.alignd_de_project.fct_patient_claims_summary"} */
+alter table "alignd_db"."alignd_marts"."fct_patient_claims_summary__dbt_tmp" rename to "fct_patient_claims_summary"
+[0m01:05:26.243591 [debug] [Thread-2 (]: SQL status: ALTER TABLE in 0.004 seconds
+[0m01:05:26.247216 [debug] [Thread-2 (]: On model.alignd_de_project.fct_patient_claims_summary: COMMIT
+[0m01:05:26.248518 [debug] [Thread-2 (]: Using postgres connection "model.alignd_de_project.fct_patient_claims_summary"
+[0m01:05:26.249558 [debug] [Thread-2 (]: On model.alignd_de_project.fct_patient_claims_summary: COMMIT
+[0m01:05:26.257131 [debug] [Thread-2 (]: SQL status: COMMIT in 0.007 seconds
+[0m01:05:26.265387 [debug] [Thread-2 (]: Applying DROP to: "alignd_db"."alignd_marts"."fct_patient_claims_summary__dbt_backup"
+[0m01:05:26.267332 [debug] [Thread-2 (]: Using postgres connection "model.alignd_de_project.fct_patient_claims_summary"
+[0m01:05:26.268521 [debug] [Thread-2 (]: On model.alignd_de_project.fct_patient_claims_summary: /* {"app": "dbt", "dbt_version": "1.11.8", "profile_name": "alignd_profile", "target_name": "dev", "node_id": "model.alignd_de_project.fct_patient_claims_summary"} */
+drop table if exists "alignd_db"."alignd_marts"."fct_patient_claims_summary__dbt_backup" cascade
+[0m01:05:26.284374 [debug] [Thread-2 (]: SQL status: DROP TABLE in 0.015 seconds
+[0m01:05:26.287088 [debug] [Thread-2 (]: On model.alignd_de_project.fct_patient_claims_summary: Close
+[0m01:05:26.289785 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '00a91af2-0c48-4645-8c4f-fb4b819b038a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E047D25A30>]}
+[0m01:05:26.292075 [info ] [Thread-2 (]: 5 of 5 OK created sql table model alignd_marts.fct_patient_claims_summary ...... [[32mSELECT 8[0m in 0.17s]
+[0m01:05:26.295764 [debug] [Thread-2 (]: Finished running node model.alignd_de_project.fct_patient_claims_summary
+[0m01:05:26.303680 [debug] [MainThread]: On master: COMMIT
+[0m01:05:26.304463 [debug] [MainThread]: Using postgres connection "master"
+[0m01:05:26.305169 [debug] [MainThread]: On master: COMMIT
+[0m01:05:26.305840 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m01:05:26.374431 [debug] [MainThread]: SQL status: COMMIT in 0.068 seconds
+[0m01:05:26.375193 [debug] [MainThread]: On master: Close
+[0m01:05:26.376272 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m01:05:26.377145 [debug] [MainThread]: Connection 'create_alignd_db_alignd_marts' was properly closed.
+[0m01:05:26.380393 [debug] [MainThread]: Connection 'create_alignd_db_alignd_staging' was properly closed.
+[0m01:05:26.382303 [debug] [MainThread]: Connection 'list_alignd_db_alignd_staging' was properly closed.
+[0m01:05:26.383404 [debug] [MainThread]: Connection 'list_alignd_db_alignd_marts' was properly closed.
+[0m01:05:26.384149 [debug] [MainThread]: Connection 'model.alignd_de_project.fct_patient_claims_summary' was properly closed.
+[0m01:05:26.384993 [debug] [MainThread]: Connection 'model.alignd_de_project.stg_clients' was properly closed.
+[0m01:05:26.385714 [debug] [MainThread]: Connection 'model.alignd_de_project.stg_products' was properly closed.
+[0m01:05:26.386385 [debug] [MainThread]: Connection 'model.alignd_de_project.dim_patients' was properly closed.
+[0m01:05:26.387596 [info ] [MainThread]: 
+[0m01:05:26.388580 [info ] [MainThread]: Finished running 2 table models, 3 view models in 0 hours 0 minutes and 1.59 seconds (1.59s).
+[0m01:05:26.391454 [debug] [MainThread]: Command end result
+[0m01:05:26.483999 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\Godfrey\Desktop\alignd-data-engineering-assessment\dbt_project\target\manifest.json
+[0m01:05:26.488004 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\Godfrey\Desktop\alignd-data-engineering-assessment\dbt_project\target\semantic_manifest.json
+[0m01:05:26.496543 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\Godfrey\Desktop\alignd-data-engineering-assessment\dbt_project\target\run_results.json
+[0m01:05:26.497273 [info ] [MainThread]: 
+[0m01:05:26.498184 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m01:05:26.498903 [info ] [MainThread]: 
+[0m01:05:26.499795 [info ] [MainThread]: Done. PASS=5 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=5
+[0m01:05:26.501326 [warn ] [MainThread]: [[33mWARNING[0m][DeprecationsSummary]: Deprecated functionality
+Summary of encountered deprecations:
+- MissingArgumentsPropertyInGenericTestDeprecation: 1 occurrence
+To see all deprecation instances instead of just the first occurrence of each,
+run command again with the `--show-all-deprecations` flag. You may also need to
+run with `--no-partial-parse` as some deprecations are only encountered during
+parsing.
+[0m01:05:26.502887 [debug] [MainThread]: Command `dbt run` succeeded at 01:05:26.502692 after 5.22 seconds
+[0m01:05:26.503385 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E0451BE930>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E047919B50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E047D250D0>]}
+[0m01:05:26.503857 [debug] [MainThread]: Flushing usage events
+[0m01:05:28.296093 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m01:17:59.545682 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002141E779BE0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002141B53B250>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002141F41EFD0>]}
+
+
+============================== 01:17:59.560335 | cd7c0d36-eac4-471a-bb02-5e949ea82a5b ==============================
+[0m01:17:59.560335 [info ] [MainThread]: Running with dbt=1.11.8
+[0m01:17:59.561625 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'version_check': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'printer_width': '80', 'write_json': 'True', 'empty': 'None', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\Godfrey\\Desktop\\alignd-data-engineering-assessment\\dbt_project', 'indirect_selection': 'eager', 'use_colors': 'True', 'invocation_command': 'dbt test', 'use_experimental_parser': 'False', 'log_path': 'C:\\Users\\Godfrey\\Desktop\\alignd-data-engineering-assessment\\dbt_project\\logs'}
+[0m01:17:59.845079 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'cd7c0d36-eac4-471a-bb02-5e949ea82a5b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002141EE742B0>]}
+[0m01:17:59.932565 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'cd7c0d36-eac4-471a-bb02-5e949ea82a5b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021420BAA470>]}
+[0m01:17:59.934471 [info ] [MainThread]: Registered adapter: postgres=1.10.0
+[0m01:18:00.394575 [debug] [MainThread]: checksum: 7d524ac048c2100769df89d592e662e060a73ca564e31bd9c2a37efdfe8d8ab6, vars: {}, profile: , target: , version: 1.11.8
+[0m01:18:00.625515 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+[0m01:18:00.627050 [debug] [MainThread]: Partial parsing: updated file: alignd_de_project://models\marts\schema.yml
+[0m01:18:01.233896 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'cd7c0d36-eac4-471a-bb02-5e949ea82a5b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021421118B50>]}
+[0m01:18:01.340781 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\Godfrey\Desktop\alignd-data-engineering-assessment\dbt_project\target\manifest.json
+[0m01:18:01.344494 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\Godfrey\Desktop\alignd-data-engineering-assessment\dbt_project\target\semantic_manifest.json
+[0m01:18:01.394093 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'cd7c0d36-eac4-471a-bb02-5e949ea82a5b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002142158A7B0>]}
+[0m01:18:01.395026 [info ] [MainThread]: Found 5 models, 20 data tests, 5 sources, 465 macros
+[0m01:18:01.395924 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'cd7c0d36-eac4-471a-bb02-5e949ea82a5b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000214214C58D0>]}
+[0m01:18:01.399557 [info ] [MainThread]: 
+[0m01:18:01.400390 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m01:18:01.401650 [info ] [MainThread]: 
+[0m01:18:01.403088 [debug] [MainThread]: Acquiring new postgres connection 'master'
+[0m01:18:01.411226 [debug] [ThreadPool]: Acquiring new postgres connection 'list_alignd_db_alignd_marts'
+[0m01:18:01.430402 [debug] [ThreadPool]: Acquiring new postgres connection 'list_alignd_db_alignd_staging'
+[0m01:18:01.533512 [debug] [ThreadPool]: Using postgres connection "list_alignd_db_alignd_marts"
+[0m01:18:01.534034 [debug] [ThreadPool]: Using postgres connection "list_alignd_db_alignd_staging"
+[0m01:18:01.534449 [debug] [ThreadPool]: On list_alignd_db_alignd_marts: /* {"app": "dbt", "dbt_version": "1.11.8", "profile_name": "alignd_profile", "target_name": "dev", "connection_name": "list_alignd_db_alignd_marts"} */
+select
+      'alignd_db' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'alignd_marts'
+    union all
+    select
+      'alignd_db' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'alignd_marts'
+    union all
+    select
+      'alignd_db' as database,
+      matviewname as name,
+      schemaname as schema,
+      'materialized_view' as type
+    from pg_matviews
+    where schemaname ilike 'alignd_marts'
+  
+[0m01:18:01.534897 [debug] [ThreadPool]: On list_alignd_db_alignd_staging: /* {"app": "dbt", "dbt_version": "1.11.8", "profile_name": "alignd_profile", "target_name": "dev", "connection_name": "list_alignd_db_alignd_staging"} */
+select
+      'alignd_db' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'alignd_staging'
+    union all
+    select
+      'alignd_db' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'alignd_staging'
+    union all
+    select
+      'alignd_db' as database,
+      matviewname as name,
+      schemaname as schema,
+      'materialized_view' as type
+    from pg_matviews
+    where schemaname ilike 'alignd_staging'
+  
+[0m01:18:01.535288 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m01:18:01.535633 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m01:18:01.777132 [debug] [ThreadPool]: SQL status: SELECT 3 in 0.241 seconds
+[0m01:18:01.780009 [debug] [ThreadPool]: On list_alignd_db_alignd_staging: ROLLBACK
+[0m01:18:01.789042 [debug] [ThreadPool]: SQL status: SELECT 2 in 0.254 seconds
+[0m01:18:01.791413 [debug] [ThreadPool]: On list_alignd_db_alignd_marts: ROLLBACK
+[0m01:18:01.793001 [debug] [ThreadPool]: On list_alignd_db_alignd_staging: Close
+[0m01:18:01.797956 [debug] [ThreadPool]: On list_alignd_db_alignd_marts: Close
+[0m01:18:01.806466 [debug] [MainThread]: Using postgres connection "master"
+[0m01:18:01.807309 [debug] [MainThread]: On master: /* {"app": "dbt", "dbt_version": "1.11.8", "profile_name": "alignd_profile", "target_name": "dev", "connection_name": "master"} */
+select distinct
+        dependent_namespace.nspname as dependent_schema,
+        dependent_class.relname as dependent_name,
+        referenced_namespace.nspname as referenced_schema,
+        referenced_class.relname as referenced_name
+
+    -- Query for views: views are entries in pg_class with an entry in pg_rewrite, but we avoid
+    -- a seq scan on pg_rewrite by leveraging the fact there is an "internal" row in pg_depend for
+    -- the view...
+    from pg_class as dependent_class
+    join pg_namespace as dependent_namespace on dependent_namespace.oid = dependent_class.relnamespace
+    join pg_depend as dependent_depend on dependent_depend.refobjid = dependent_class.oid
+        and dependent_depend.classid = 'pg_rewrite'::regclass
+        and dependent_depend.refclassid = 'pg_class'::regclass
+        and dependent_depend.deptype = 'i'
+
+    -- ... and via pg_depend (that has a row per column, hence the need for "distinct" above, and
+    -- making sure to exclude the internal row to avoid a view appearing to depend on itself)...
+    join pg_depend as joining_depend on joining_depend.objid = dependent_depend.objid
+        and joining_depend.classid = 'pg_rewrite'::regclass
+        and joining_depend.refclassid = 'pg_class'::regclass
+        and joining_depend.refobjid != dependent_depend.refobjid
+
+    -- ... we can find the tables they query from in pg_class, but excluding system tables. Note we
+    -- don't need need to exclude _dependent_ system tables, because they only query from other
+    -- system tables, and so are automatically excluded by excluding _referenced_ system tables
+    join pg_class as referenced_class on referenced_class.oid = joining_depend.refobjid
+    join pg_namespace as referenced_namespace on referenced_namespace.oid = referenced_class.relnamespace
+        and referenced_namespace.nspname != 'information_schema'
+        and referenced_namespace.nspname not like 'pg\_%'
+
+    order by
+        dependent_schema, dependent_name, referenced_schema, referenced_name;
+[0m01:18:01.808205 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m01:18:02.010286 [debug] [MainThread]: SQL status: SELECT 12 in 0.202 seconds
+[0m01:18:02.012559 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'cd7c0d36-eac4-471a-bb02-5e949ea82a5b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000214215CBC70>]}
+[0m01:18:02.013352 [debug] [MainThread]: On master: ROLLBACK
+[0m01:18:02.015662 [debug] [MainThread]: On master: COMMIT
+[0m01:18:02.016888 [debug] [MainThread]: Using postgres connection "master"
+[0m01:18:02.017575 [debug] [MainThread]: On master: COMMIT
+[0m01:18:02.021163 [debug] [MainThread]: SQL status: COMMIT in 0.003 seconds
+[0m01:18:02.021787 [debug] [MainThread]: On master: Close
+[0m01:18:02.033376 [debug] [Thread-3 (]: Began running node test.alignd_de_project.not_null_dim_patients_income.8fad2cd1aa
+[0m01:18:02.034039 [debug] [Thread-4 (]: Began running node test.alignd_de_project.not_null_dim_patients_province.c91ebe706e
+[0m01:18:02.034629 [debug] [Thread-2 (]: Began running node test.alignd_de_project.not_null_dim_patients_client_id.f627bf7554
+[0m01:18:02.035059 [debug] [Thread-1 (]: Began running node test.alignd_de_project.accepted_values_dim_patients_province__Gauteng__Western_Cape__KZN.d1d571132e
+[0m01:18:02.035557 [info ] [Thread-3 (]: 3 of 20 START test not_null_dim_patients_income ................................ [RUN]
+[0m01:18:02.036180 [info ] [Thread-4 (]: 4 of 20 START test not_null_dim_patients_province .............................. [RUN]
+[0m01:18:02.038721 [debug] [Thread-3 (]: Acquiring new postgres connection 'test.alignd_de_project.not_null_dim_patients_income.8fad2cd1aa'
+[0m01:18:02.037154 [info ] [Thread-2 (]: 2 of 20 START test not_null_dim_patients_client_id ............................. [RUN]
+[0m01:18:02.039686 [debug] [Thread-4 (]: Acquiring new postgres connection 'test.alignd_de_project.not_null_dim_patients_province.c91ebe706e'
+[0m01:18:02.037915 [info ] [Thread-1 (]: 1 of 20 START test accepted_values_dim_patients_province__Gauteng__Western_Cape__KZN  [RUN]
+[0m01:18:02.040379 [debug] [Thread-3 (]: Began compiling node test.alignd_de_project.not_null_dim_patients_income.8fad2cd1aa
+[0m01:18:02.041100 [debug] [Thread-2 (]: Acquiring new postgres connection 'test.alignd_de_project.not_null_dim_patients_client_id.f627bf7554'
+[0m01:18:02.072761 [debug] [Thread-2 (]: Began compiling node test.alignd_de_project.not_null_dim_patients_client_id.f627bf7554
+[0m01:18:02.041698 [debug] [Thread-4 (]: Began compiling node test.alignd_de_project.not_null_dim_patients_province.c91ebe706e
+[0m01:18:02.070832 [debug] [Thread-3 (]: Writing injected SQL for node "test.alignd_de_project.not_null_dim_patients_income.8fad2cd1aa"
+[0m01:18:02.042404 [debug] [Thread-1 (]: Acquiring new postgres connection 'test.alignd_de_project.accepted_values_dim_patients_province__Gauteng__Western_Cape__KZN.d1d571132e'
+[0m01:18:02.081050 [debug] [Thread-2 (]: Writing injected SQL for node "test.alignd_de_project.not_null_dim_patients_client_id.f627bf7554"
+[0m01:18:02.086829 [debug] [Thread-4 (]: Writing injected SQL for node "test.alignd_de_project.not_null_dim_patients_province.c91ebe706e"
+[0m01:18:02.087711 [debug] [Thread-1 (]: Began compiling node test.alignd_de_project.accepted_values_dim_patients_province__Gauteng__Western_Cape__KZN.d1d571132e
+[0m01:18:02.095737 [debug] [Thread-1 (]: Writing injected SQL for node "test.alignd_de_project.accepted_values_dim_patients_province__Gauteng__Western_Cape__KZN.d1d571132e"
+[0m01:18:02.097665 [debug] [Thread-2 (]: Began executing node test.alignd_de_project.not_null_dim_patients_client_id.f627bf7554
+[0m01:18:02.121416 [debug] [Thread-1 (]: Began executing node test.alignd_de_project.accepted_values_dim_patients_province__Gauteng__Western_Cape__KZN.d1d571132e
+[0m01:18:02.133855 [debug] [Thread-1 (]: Writing runtime sql for node "test.alignd_de_project.accepted_values_dim_patients_province__Gauteng__Western_Cape__KZN.d1d571132e"
+[0m01:18:02.134462 [debug] [Thread-3 (]: Began executing node test.alignd_de_project.not_null_dim_patients_income.8fad2cd1aa
+[0m01:18:02.138245 [debug] [Thread-2 (]: Writing runtime sql for node "test.alignd_de_project.not_null_dim_patients_client_id.f627bf7554"
+[0m01:18:02.141804 [debug] [Thread-3 (]: Writing runtime sql for node "test.alignd_de_project.not_null_dim_patients_income.8fad2cd1aa"
+[0m01:18:02.142398 [debug] [Thread-4 (]: Began executing node test.alignd_de_project.not_null_dim_patients_province.c91ebe706e
+[0m01:18:02.147006 [debug] [Thread-4 (]: Writing runtime sql for node "test.alignd_de_project.not_null_dim_patients_province.c91ebe706e"
+[0m01:18:02.148412 [debug] [Thread-3 (]: Using postgres connection "test.alignd_de_project.not_null_dim_patients_income.8fad2cd1aa"
+[0m01:18:02.149383 [debug] [Thread-1 (]: Using postgres connection "test.alignd_de_project.accepted_values_dim_patients_province__Gauteng__Western_Cape__KZN.d1d571132e"
+[0m01:18:02.150131 [debug] [Thread-3 (]: On test.alignd_de_project.not_null_dim_patients_income.8fad2cd1aa: /* {"app": "dbt", "dbt_version": "1.11.8", "profile_name": "alignd_profile", "target_name": "dev", "node_id": "test.alignd_de_project.not_null_dim_patients_income.8fad2cd1aa"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select income
+from "alignd_db"."alignd_marts"."dim_patients"
+where income is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m01:18:02.151879 [debug] [Thread-4 (]: Using postgres connection "test.alignd_de_project.not_null_dim_patients_province.c91ebe706e"
+[0m01:18:02.152587 [debug] [Thread-2 (]: Using postgres connection "test.alignd_de_project.not_null_dim_patients_client_id.f627bf7554"
+[0m01:18:02.153299 [debug] [Thread-1 (]: On test.alignd_de_project.accepted_values_dim_patients_province__Gauteng__Western_Cape__KZN.d1d571132e: /* {"app": "dbt", "dbt_version": "1.11.8", "profile_name": "alignd_profile", "target_name": "dev", "node_id": "test.alignd_de_project.accepted_values_dim_patients_province__Gauteng__Western_Cape__KZN.d1d571132e"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+with all_values as (
+
+    select
+        province as value_field,
+        count(*) as n_records
+
+    from "alignd_db"."alignd_marts"."dim_patients"
+    group by province
+
+)
+
+select *
+from all_values
+where value_field not in (
+    'Gauteng','Western Cape','KZN'
+)
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m01:18:02.154033 [debug] [Thread-3 (]: Opening a new connection, currently in state init
+[0m01:18:02.154627 [debug] [Thread-4 (]: On test.alignd_de_project.not_null_dim_patients_province.c91ebe706e: /* {"app": "dbt", "dbt_version": "1.11.8", "profile_name": "alignd_profile", "target_name": "dev", "node_id": "test.alignd_de_project.not_null_dim_patients_province.c91ebe706e"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select province
+from "alignd_db"."alignd_marts"."dim_patients"
+where province is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m01:18:02.155234 [debug] [Thread-2 (]: On test.alignd_de_project.not_null_dim_patients_client_id.f627bf7554: /* {"app": "dbt", "dbt_version": "1.11.8", "profile_name": "alignd_profile", "target_name": "dev", "node_id": "test.alignd_de_project.not_null_dim_patients_client_id.f627bf7554"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select client_id
+from "alignd_db"."alignd_marts"."dim_patients"
+where client_id is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m01:18:02.156844 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m01:18:02.158872 [debug] [Thread-4 (]: Opening a new connection, currently in state init
+[0m01:18:02.159775 [debug] [Thread-2 (]: Opening a new connection, currently in state init
+[0m01:18:02.269261 [debug] [Thread-3 (]: SQL status: SELECT 1 in 0.115 seconds
+[0m01:18:02.277176 [debug] [Thread-3 (]: On test.alignd_de_project.not_null_dim_patients_income.8fad2cd1aa: ROLLBACK
+[0m01:18:02.287343 [debug] [Thread-4 (]: SQL status: SELECT 1 in 0.128 seconds
+[0m01:18:02.290313 [debug] [Thread-4 (]: On test.alignd_de_project.not_null_dim_patients_province.c91ebe706e: ROLLBACK
+[0m01:18:02.291102 [debug] [Thread-3 (]: On test.alignd_de_project.not_null_dim_patients_income.8fad2cd1aa: Close
+[0m01:18:02.292420 [info ] [Thread-3 (]: 3 of 20 PASS not_null_dim_patients_income ...................................... [[32mPASS[0m in 0.25s]
+[0m01:18:02.295693 [debug] [Thread-3 (]: Finished running node test.alignd_de_project.not_null_dim_patients_income.8fad2cd1aa
+[0m01:18:02.296652 [debug] [Thread-3 (]: Began running node test.alignd_de_project.not_null_fct_patient_claims_summary_client_id.c444bfa246
+[0m01:18:02.297627 [info ] [Thread-3 (]: 5 of 20 START test not_null_fct_patient_claims_summary_client_id ............... [RUN]
+[0m01:18:02.307644 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly test.alignd_de_project.not_null_dim_patients_income.8fad2cd1aa, now test.alignd_de_project.not_null_fct_patient_claims_summary_client_id.c444bfa246)
+[0m01:18:02.308350 [debug] [Thread-4 (]: On test.alignd_de_project.not_null_dim_patients_province.c91ebe706e: Close
+[0m01:18:02.309027 [debug] [Thread-3 (]: Began compiling node test.alignd_de_project.not_null_fct_patient_claims_summary_client_id.c444bfa246
+[0m01:18:02.316954 [debug] [Thread-3 (]: Writing injected SQL for node "test.alignd_de_project.not_null_fct_patient_claims_summary_client_id.c444bfa246"
+[0m01:18:02.319811 [debug] [Thread-3 (]: Began executing node test.alignd_de_project.not_null_fct_patient_claims_summary_client_id.c444bfa246
+[0m01:18:02.325642 [debug] [Thread-3 (]: Writing runtime sql for node "test.alignd_de_project.not_null_fct_patient_claims_summary_client_id.c444bfa246"
+[0m01:18:02.327914 [debug] [Thread-3 (]: Using postgres connection "test.alignd_de_project.not_null_fct_patient_claims_summary_client_id.c444bfa246"
+[0m01:18:02.328800 [debug] [Thread-3 (]: On test.alignd_de_project.not_null_fct_patient_claims_summary_client_id.c444bfa246: /* {"app": "dbt", "dbt_version": "1.11.8", "profile_name": "alignd_profile", "target_name": "dev", "node_id": "test.alignd_de_project.not_null_fct_patient_claims_summary_client_id.c444bfa246"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select client_id
+from "alignd_db"."alignd_marts"."fct_patient_claims_summary"
+where client_id is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m01:18:02.329540 [debug] [Thread-3 (]: Opening a new connection, currently in state closed
+[0m01:18:02.318221 [info ] [Thread-4 (]: 4 of 20 PASS not_null_dim_patients_province .................................... [[32mPASS[0m in 0.28s]
+[0m01:18:02.335413 [debug] [Thread-4 (]: Finished running node test.alignd_de_project.not_null_dim_patients_province.c91ebe706e
+[0m01:18:02.336217 [debug] [Thread-4 (]: Began running node test.alignd_de_project.not_null_fct_patient_claims_summary_lapse_rate_pct.53c0fb0357
+[0m01:18:02.336944 [info ] [Thread-4 (]: 6 of 20 START test not_null_fct_patient_claims_summary_lapse_rate_pct .......... [RUN]
+[0m01:18:02.349490 [debug] [Thread-4 (]: Re-using an available connection from the pool (formerly test.alignd_de_project.not_null_dim_patients_province.c91ebe706e, now test.alignd_de_project.not_null_fct_patient_claims_summary_lapse_rate_pct.53c0fb0357)
+[0m01:18:02.350672 [debug] [Thread-4 (]: Began compiling node test.alignd_de_project.not_null_fct_patient_claims_summary_lapse_rate_pct.53c0fb0357
+[0m01:18:02.361002 [debug] [Thread-4 (]: Writing injected SQL for node "test.alignd_de_project.not_null_fct_patient_claims_summary_lapse_rate_pct.53c0fb0357"
+[0m01:18:02.363345 [debug] [Thread-4 (]: Began executing node test.alignd_de_project.not_null_fct_patient_claims_summary_lapse_rate_pct.53c0fb0357
+[0m01:18:02.368638 [debug] [Thread-4 (]: Writing runtime sql for node "test.alignd_de_project.not_null_fct_patient_claims_summary_lapse_rate_pct.53c0fb0357"
+[0m01:18:02.370569 [debug] [Thread-4 (]: Using postgres connection "test.alignd_de_project.not_null_fct_patient_claims_summary_lapse_rate_pct.53c0fb0357"
+[0m01:18:02.372133 [debug] [Thread-4 (]: On test.alignd_de_project.not_null_fct_patient_claims_summary_lapse_rate_pct.53c0fb0357: /* {"app": "dbt", "dbt_version": "1.11.8", "profile_name": "alignd_profile", "target_name": "dev", "node_id": "test.alignd_de_project.not_null_fct_patient_claims_summary_lapse_rate_pct.53c0fb0357"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select lapse_rate_pct
+from "alignd_db"."alignd_marts"."fct_patient_claims_summary"
+where lapse_rate_pct is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m01:18:02.373560 [debug] [Thread-4 (]: Opening a new connection, currently in state closed
+[0m01:18:02.442906 [debug] [Thread-2 (]: SQL status: SELECT 1 in 0.283 seconds
+[0m01:18:02.445614 [debug] [Thread-2 (]: On test.alignd_de_project.not_null_dim_patients_client_id.f627bf7554: ROLLBACK
+[0m01:18:02.450434 [debug] [Thread-1 (]: SQL status: SELECT 1 in 0.294 seconds
+[0m01:18:02.452815 [debug] [Thread-1 (]: On test.alignd_de_project.accepted_values_dim_patients_province__Gauteng__Western_Cape__KZN.d1d571132e: ROLLBACK
+[0m01:18:02.459342 [debug] [Thread-2 (]: On test.alignd_de_project.not_null_dim_patients_client_id.f627bf7554: Close
+[0m01:18:02.460682 [info ] [Thread-2 (]: 2 of 20 PASS not_null_dim_patients_client_id ................................... [[32mPASS[0m in 0.42s]
+[0m01:18:02.464731 [debug] [Thread-2 (]: Finished running node test.alignd_de_project.not_null_dim_patients_client_id.f627bf7554
+[0m01:18:02.465390 [debug] [Thread-2 (]: Began running node test.alignd_de_project.not_null_fct_patient_claims_summary_total_claims.0cbdc1c0d9
+[0m01:18:02.467287 [debug] [Thread-1 (]: On test.alignd_de_project.accepted_values_dim_patients_province__Gauteng__Western_Cape__KZN.d1d571132e: Close
+[0m01:18:02.466366 [info ] [Thread-2 (]: 7 of 20 START test not_null_fct_patient_claims_summary_total_claims ............ [RUN]
+[0m01:18:02.473031 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly test.alignd_de_project.not_null_dim_patients_client_id.f627bf7554, now test.alignd_de_project.not_null_fct_patient_claims_summary_total_claims.0cbdc1c0d9)
+[0m01:18:02.473918 [debug] [Thread-2 (]: Began compiling node test.alignd_de_project.not_null_fct_patient_claims_summary_total_claims.0cbdc1c0d9
+[0m01:18:02.489976 [debug] [Thread-2 (]: Writing injected SQL for node "test.alignd_de_project.not_null_fct_patient_claims_summary_total_claims.0cbdc1c0d9"
+[0m01:18:02.492883 [debug] [Thread-2 (]: Began executing node test.alignd_de_project.not_null_fct_patient_claims_summary_total_claims.0cbdc1c0d9
+[0m01:18:02.498171 [debug] [Thread-2 (]: Writing runtime sql for node "test.alignd_de_project.not_null_fct_patient_claims_summary_total_claims.0cbdc1c0d9"
+[0m01:18:02.500043 [debug] [Thread-2 (]: Using postgres connection "test.alignd_de_project.not_null_fct_patient_claims_summary_total_claims.0cbdc1c0d9"
+[0m01:18:02.468814 [info ] [Thread-1 (]: 1 of 20 PASS accepted_values_dim_patients_province__Gauteng__Western_Cape__KZN . [[32mPASS[0m in 0.43s]
+[0m01:18:02.501150 [debug] [Thread-2 (]: On test.alignd_de_project.not_null_fct_patient_claims_summary_total_claims.0cbdc1c0d9: /* {"app": "dbt", "dbt_version": "1.11.8", "profile_name": "alignd_profile", "target_name": "dev", "node_id": "test.alignd_de_project.not_null_fct_patient_claims_summary_total_claims.0cbdc1c0d9"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select total_claims
+from "alignd_db"."alignd_marts"."fct_patient_claims_summary"
+where total_claims is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m01:18:02.502283 [debug] [Thread-1 (]: Finished running node test.alignd_de_project.accepted_values_dim_patients_province__Gauteng__Western_Cape__KZN.d1d571132e
+[0m01:18:02.503120 [debug] [Thread-2 (]: Opening a new connection, currently in state closed
+[0m01:18:02.503915 [debug] [Thread-1 (]: Began running node test.alignd_de_project.not_null_fct_patient_claims_summary_total_premiums.29d5ac38c9
+[0m01:18:02.510284 [info ] [Thread-1 (]: 8 of 20 START test not_null_fct_patient_claims_summary_total_premiums .......... [RUN]
+[0m01:18:02.515757 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.alignd_de_project.accepted_values_dim_patients_province__Gauteng__Western_Cape__KZN.d1d571132e, now test.alignd_de_project.not_null_fct_patient_claims_summary_total_premiums.29d5ac38c9)
+[0m01:18:02.516886 [debug] [Thread-1 (]: Began compiling node test.alignd_de_project.not_null_fct_patient_claims_summary_total_premiums.29d5ac38c9
+[0m01:18:02.527641 [debug] [Thread-1 (]: Writing injected SQL for node "test.alignd_de_project.not_null_fct_patient_claims_summary_total_premiums.29d5ac38c9"
+[0m01:18:02.530164 [debug] [Thread-1 (]: Began executing node test.alignd_de_project.not_null_fct_patient_claims_summary_total_premiums.29d5ac38c9
+[0m01:18:02.534025 [debug] [Thread-1 (]: Writing runtime sql for node "test.alignd_de_project.not_null_fct_patient_claims_summary_total_premiums.29d5ac38c9"
+[0m01:18:02.536115 [debug] [Thread-1 (]: Using postgres connection "test.alignd_de_project.not_null_fct_patient_claims_summary_total_premiums.29d5ac38c9"
+[0m01:18:02.537289 [debug] [Thread-1 (]: On test.alignd_de_project.not_null_fct_patient_claims_summary_total_premiums.29d5ac38c9: /* {"app": "dbt", "dbt_version": "1.11.8", "profile_name": "alignd_profile", "target_name": "dev", "node_id": "test.alignd_de_project.not_null_fct_patient_claims_summary_total_premiums.29d5ac38c9"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select total_premiums
+from "alignd_db"."alignd_marts"."fct_patient_claims_summary"
+where total_premiums is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m01:18:02.539445 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m01:18:02.618567 [debug] [Thread-4 (]: SQL status: SELECT 1 in 0.245 seconds
+[0m01:18:02.620835 [debug] [Thread-4 (]: On test.alignd_de_project.not_null_fct_patient_claims_summary_lapse_rate_pct.53c0fb0357: ROLLBACK
+[0m01:18:02.624692 [debug] [Thread-3 (]: SQL status: SELECT 1 in 0.294 seconds
+[0m01:18:02.628325 [debug] [Thread-3 (]: On test.alignd_de_project.not_null_fct_patient_claims_summary_client_id.c444bfa246: ROLLBACK
+[0m01:18:02.640666 [debug] [Thread-4 (]: On test.alignd_de_project.not_null_fct_patient_claims_summary_lapse_rate_pct.53c0fb0357: Close
+[0m01:18:02.642161 [info ] [Thread-4 (]: 6 of 20 PASS not_null_fct_patient_claims_summary_lapse_rate_pct ................ [[32mPASS[0m in 0.29s]
+[0m01:18:02.644347 [debug] [Thread-4 (]: Finished running node test.alignd_de_project.not_null_fct_patient_claims_summary_lapse_rate_pct.53c0fb0357
+[0m01:18:02.645178 [debug] [Thread-4 (]: Began running node test.alignd_de_project.not_null_stg_clients_client_id.025cfd4505
+[0m01:18:02.645953 [info ] [Thread-4 (]: 9 of 20 START test not_null_stg_clients_client_id .............................. [RUN]
+[0m01:18:02.648470 [debug] [Thread-4 (]: Re-using an available connection from the pool (formerly test.alignd_de_project.not_null_fct_patient_claims_summary_lapse_rate_pct.53c0fb0357, now test.alignd_de_project.not_null_stg_clients_client_id.025cfd4505)
+[0m01:18:02.649234 [debug] [Thread-4 (]: Began compiling node test.alignd_de_project.not_null_stg_clients_client_id.025cfd4505
+[0m01:18:02.656635 [debug] [Thread-4 (]: Writing injected SQL for node "test.alignd_de_project.not_null_stg_clients_client_id.025cfd4505"
+[0m01:18:02.659061 [debug] [Thread-4 (]: Began executing node test.alignd_de_project.not_null_stg_clients_client_id.025cfd4505
+[0m01:18:02.663847 [debug] [Thread-4 (]: Writing runtime sql for node "test.alignd_de_project.not_null_stg_clients_client_id.025cfd4505"
+[0m01:18:02.667717 [debug] [Thread-4 (]: Using postgres connection "test.alignd_de_project.not_null_stg_clients_client_id.025cfd4505"
+[0m01:18:02.668629 [debug] [Thread-4 (]: On test.alignd_de_project.not_null_stg_clients_client_id.025cfd4505: /* {"app": "dbt", "dbt_version": "1.11.8", "profile_name": "alignd_profile", "target_name": "dev", "node_id": "test.alignd_de_project.not_null_stg_clients_client_id.025cfd4505"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select client_id
+from "alignd_db"."alignd_staging"."stg_clients"
+where client_id is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m01:18:02.669765 [debug] [Thread-4 (]: Opening a new connection, currently in state closed
+[0m01:18:02.682388 [debug] [Thread-3 (]: On test.alignd_de_project.not_null_fct_patient_claims_summary_client_id.c444bfa246: Close
+[0m01:18:02.684328 [info ] [Thread-3 (]: 5 of 20 PASS not_null_fct_patient_claims_summary_client_id ..................... [[32mPASS[0m in 0.38s]
+[0m01:18:02.697004 [debug] [Thread-3 (]: Finished running node test.alignd_de_project.not_null_fct_patient_claims_summary_client_id.c444bfa246
+[0m01:18:02.698100 [debug] [Thread-3 (]: Began running node test.alignd_de_project.not_null_stg_clients_income.e4a0e16732
+[0m01:18:02.699069 [info ] [Thread-3 (]: 10 of 20 START test not_null_stg_clients_income ................................ [RUN]
+[0m01:18:02.713951 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly test.alignd_de_project.not_null_fct_patient_claims_summary_client_id.c444bfa246, now test.alignd_de_project.not_null_stg_clients_income.e4a0e16732)
+[0m01:18:02.714708 [debug] [Thread-3 (]: Began compiling node test.alignd_de_project.not_null_stg_clients_income.e4a0e16732
+[0m01:18:02.723113 [debug] [Thread-3 (]: Writing injected SQL for node "test.alignd_de_project.not_null_stg_clients_income.e4a0e16732"
+[0m01:18:02.725950 [debug] [Thread-3 (]: Began executing node test.alignd_de_project.not_null_stg_clients_income.e4a0e16732
+[0m01:18:02.730598 [debug] [Thread-3 (]: Writing runtime sql for node "test.alignd_de_project.not_null_stg_clients_income.e4a0e16732"
+[0m01:18:02.732530 [debug] [Thread-3 (]: Using postgres connection "test.alignd_de_project.not_null_stg_clients_income.e4a0e16732"
+[0m01:18:02.733336 [debug] [Thread-3 (]: On test.alignd_de_project.not_null_stg_clients_income.e4a0e16732: /* {"app": "dbt", "dbt_version": "1.11.8", "profile_name": "alignd_profile", "target_name": "dev", "node_id": "test.alignd_de_project.not_null_stg_clients_income.e4a0e16732"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select income
+from "alignd_db"."alignd_staging"."stg_clients"
+where income is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m01:18:02.734051 [debug] [Thread-3 (]: Opening a new connection, currently in state closed
+[0m01:18:02.781933 [debug] [Thread-2 (]: SQL status: SELECT 1 in 0.279 seconds
+[0m01:18:02.786122 [debug] [Thread-2 (]: On test.alignd_de_project.not_null_fct_patient_claims_summary_total_claims.0cbdc1c0d9: ROLLBACK
+[0m01:18:02.788627 [debug] [Thread-1 (]: SQL status: SELECT 1 in 0.249 seconds
+[0m01:18:02.792018 [debug] [Thread-1 (]: On test.alignd_de_project.not_null_fct_patient_claims_summary_total_premiums.29d5ac38c9: ROLLBACK
+[0m01:18:02.794397 [debug] [Thread-2 (]: On test.alignd_de_project.not_null_fct_patient_claims_summary_total_claims.0cbdc1c0d9: Close
+[0m01:18:02.795844 [info ] [Thread-2 (]: 7 of 20 PASS not_null_fct_patient_claims_summary_total_claims .................. [[32mPASS[0m in 0.32s]
+[0m01:18:02.802835 [debug] [Thread-2 (]: Finished running node test.alignd_de_project.not_null_fct_patient_claims_summary_total_claims.0cbdc1c0d9
+[0m01:18:02.803806 [debug] [Thread-2 (]: Began running node test.alignd_de_project.not_null_stg_clients_province.72debe4514
+[0m01:18:02.809190 [debug] [Thread-1 (]: On test.alignd_de_project.not_null_fct_patient_claims_summary_total_premiums.29d5ac38c9: Close
+[0m01:18:02.805041 [info ] [Thread-2 (]: 11 of 20 START test not_null_stg_clients_province .............................. [RUN]
+[0m01:18:02.812003 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly test.alignd_de_project.not_null_fct_patient_claims_summary_total_claims.0cbdc1c0d9, now test.alignd_de_project.not_null_stg_clients_province.72debe4514)
+[0m01:18:02.812836 [debug] [Thread-2 (]: Began compiling node test.alignd_de_project.not_null_stg_clients_province.72debe4514
+[0m01:18:02.822453 [debug] [Thread-2 (]: Writing injected SQL for node "test.alignd_de_project.not_null_stg_clients_province.72debe4514"
+[0m01:18:02.826758 [debug] [Thread-2 (]: Began executing node test.alignd_de_project.not_null_stg_clients_province.72debe4514
+[0m01:18:02.831358 [debug] [Thread-2 (]: Writing runtime sql for node "test.alignd_de_project.not_null_stg_clients_province.72debe4514"
+[0m01:18:02.810720 [info ] [Thread-1 (]: 8 of 20 PASS not_null_fct_patient_claims_summary_total_premiums ................ [[32mPASS[0m in 0.29s]
+[0m01:18:02.833641 [debug] [Thread-1 (]: Finished running node test.alignd_de_project.not_null_fct_patient_claims_summary_total_premiums.29d5ac38c9
+[0m01:18:02.834635 [debug] [Thread-1 (]: Began running node test.alignd_de_project.not_null_stg_health_lapses_client_id.070f847522
+[0m01:18:02.837015 [debug] [Thread-2 (]: Using postgres connection "test.alignd_de_project.not_null_stg_clients_province.72debe4514"
+[0m01:18:02.840372 [debug] [Thread-2 (]: On test.alignd_de_project.not_null_stg_clients_province.72debe4514: /* {"app": "dbt", "dbt_version": "1.11.8", "profile_name": "alignd_profile", "target_name": "dev", "node_id": "test.alignd_de_project.not_null_stg_clients_province.72debe4514"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select province
+from "alignd_db"."alignd_staging"."stg_clients"
+where province is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m01:18:02.841652 [debug] [Thread-2 (]: Opening a new connection, currently in state closed
+[0m01:18:02.835889 [info ] [Thread-1 (]: 12 of 20 START test not_null_stg_health_lapses_client_id ....................... [RUN]
+[0m01:18:02.847624 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.alignd_de_project.not_null_fct_patient_claims_summary_total_premiums.29d5ac38c9, now test.alignd_de_project.not_null_stg_health_lapses_client_id.070f847522)
+[0m01:18:02.848534 [debug] [Thread-1 (]: Began compiling node test.alignd_de_project.not_null_stg_health_lapses_client_id.070f847522
+[0m01:18:02.857993 [debug] [Thread-1 (]: Writing injected SQL for node "test.alignd_de_project.not_null_stg_health_lapses_client_id.070f847522"
+[0m01:18:02.860069 [debug] [Thread-1 (]: Began executing node test.alignd_de_project.not_null_stg_health_lapses_client_id.070f847522
+[0m01:18:02.865412 [debug] [Thread-1 (]: Writing runtime sql for node "test.alignd_de_project.not_null_stg_health_lapses_client_id.070f847522"
+[0m01:18:02.867435 [debug] [Thread-1 (]: Using postgres connection "test.alignd_de_project.not_null_stg_health_lapses_client_id.070f847522"
+[0m01:18:02.868295 [debug] [Thread-1 (]: On test.alignd_de_project.not_null_stg_health_lapses_client_id.070f847522: /* {"app": "dbt", "dbt_version": "1.11.8", "profile_name": "alignd_profile", "target_name": "dev", "node_id": "test.alignd_de_project.not_null_stg_health_lapses_client_id.070f847522"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select client_id
+from "alignd_db"."alignd_staging"."stg_health_lapses"
+where client_id is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m01:18:02.869108 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m01:18:03.317421 [debug] [Thread-4 (]: SQL status: SELECT 1 in 0.648 seconds
+[0m01:18:03.318216 [debug] [Thread-3 (]: SQL status: SELECT 1 in 0.584 seconds
+[0m01:18:03.320655 [debug] [Thread-4 (]: On test.alignd_de_project.not_null_stg_clients_client_id.025cfd4505: ROLLBACK
+[0m01:18:03.323291 [debug] [Thread-3 (]: On test.alignd_de_project.not_null_stg_clients_income.e4a0e16732: ROLLBACK
+[0m01:18:03.337830 [debug] [Thread-3 (]: On test.alignd_de_project.not_null_stg_clients_income.e4a0e16732: Close
+[0m01:18:03.340116 [debug] [Thread-4 (]: On test.alignd_de_project.not_null_stg_clients_client_id.025cfd4505: Close
+[0m01:18:03.339064 [info ] [Thread-3 (]: 10 of 20 PASS not_null_stg_clients_income ...................................... [[32mPASS[0m in 0.63s]
+[0m01:18:03.357549 [debug] [Thread-3 (]: Finished running node test.alignd_de_project.not_null_stg_clients_income.e4a0e16732
+[0m01:18:03.358456 [debug] [Thread-3 (]: Began running node test.alignd_de_project.not_null_stg_health_lapses_lapse_id.c8a3b65f20
+[0m01:18:03.341155 [info ] [Thread-4 (]: 9 of 20 PASS not_null_stg_clients_client_id .................................... [[32mPASS[0m in 0.69s]
+[0m01:18:03.360670 [debug] [Thread-4 (]: Finished running node test.alignd_de_project.not_null_stg_clients_client_id.025cfd4505
+[0m01:18:03.361439 [debug] [Thread-4 (]: Began running node test.alignd_de_project.not_null_stg_health_lapses_policy_id.4daaa0f6b9
+[0m01:18:03.359219 [info ] [Thread-3 (]: 13 of 20 START test not_null_stg_health_lapses_lapse_id ........................ [RUN]
+[0m01:18:03.370088 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly test.alignd_de_project.not_null_stg_clients_income.e4a0e16732, now test.alignd_de_project.not_null_stg_health_lapses_lapse_id.c8a3b65f20)
+[0m01:18:03.370829 [debug] [Thread-3 (]: Began compiling node test.alignd_de_project.not_null_stg_health_lapses_lapse_id.c8a3b65f20
+[0m01:18:03.378586 [debug] [Thread-3 (]: Writing injected SQL for node "test.alignd_de_project.not_null_stg_health_lapses_lapse_id.c8a3b65f20"
+[0m01:18:03.362261 [info ] [Thread-4 (]: 14 of 20 START test not_null_stg_health_lapses_policy_id ....................... [RUN]
+[0m01:18:03.380103 [debug] [Thread-4 (]: Re-using an available connection from the pool (formerly test.alignd_de_project.not_null_stg_clients_client_id.025cfd4505, now test.alignd_de_project.not_null_stg_health_lapses_policy_id.4daaa0f6b9)
+[0m01:18:03.380833 [debug] [Thread-4 (]: Began compiling node test.alignd_de_project.not_null_stg_health_lapses_policy_id.4daaa0f6b9
+[0m01:18:03.386816 [debug] [Thread-4 (]: Writing injected SQL for node "test.alignd_de_project.not_null_stg_health_lapses_policy_id.4daaa0f6b9"
+[0m01:18:03.388086 [debug] [Thread-3 (]: Began executing node test.alignd_de_project.not_null_stg_health_lapses_lapse_id.c8a3b65f20
+[0m01:18:03.391654 [debug] [Thread-3 (]: Writing runtime sql for node "test.alignd_de_project.not_null_stg_health_lapses_lapse_id.c8a3b65f20"
+[0m01:18:03.392785 [debug] [Thread-4 (]: Began executing node test.alignd_de_project.not_null_stg_health_lapses_policy_id.4daaa0f6b9
+[0m01:18:03.397506 [debug] [Thread-4 (]: Writing runtime sql for node "test.alignd_de_project.not_null_stg_health_lapses_policy_id.4daaa0f6b9"
+[0m01:18:03.398627 [debug] [Thread-3 (]: Using postgres connection "test.alignd_de_project.not_null_stg_health_lapses_lapse_id.c8a3b65f20"
+[0m01:18:03.399394 [debug] [Thread-3 (]: On test.alignd_de_project.not_null_stg_health_lapses_lapse_id.c8a3b65f20: /* {"app": "dbt", "dbt_version": "1.11.8", "profile_name": "alignd_profile", "target_name": "dev", "node_id": "test.alignd_de_project.not_null_stg_health_lapses_lapse_id.c8a3b65f20"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select lapse_id
+from "alignd_db"."alignd_staging"."stg_health_lapses"
+where lapse_id is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m01:18:03.400155 [debug] [Thread-3 (]: Opening a new connection, currently in state closed
+[0m01:18:03.401156 [debug] [Thread-4 (]: Using postgres connection "test.alignd_de_project.not_null_stg_health_lapses_policy_id.4daaa0f6b9"
+[0m01:18:03.402151 [debug] [Thread-4 (]: On test.alignd_de_project.not_null_stg_health_lapses_policy_id.4daaa0f6b9: /* {"app": "dbt", "dbt_version": "1.11.8", "profile_name": "alignd_profile", "target_name": "dev", "node_id": "test.alignd_de_project.not_null_stg_health_lapses_policy_id.4daaa0f6b9"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select policy_id
+from "alignd_db"."alignd_staging"."stg_health_lapses"
+where policy_id is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m01:18:03.402953 [debug] [Thread-4 (]: Opening a new connection, currently in state closed
+[0m01:18:03.634159 [debug] [Thread-2 (]: SQL status: SELECT 1 in 0.792 seconds
+[0m01:18:03.637448 [debug] [Thread-2 (]: On test.alignd_de_project.not_null_stg_clients_province.72debe4514: ROLLBACK
+[0m01:18:03.648505 [debug] [Thread-2 (]: On test.alignd_de_project.not_null_stg_clients_province.72debe4514: Close
+[0m01:18:03.649984 [info ] [Thread-2 (]: 11 of 20 PASS not_null_stg_clients_province .................................... [[32mPASS[0m in 0.84s]
+[0m01:18:03.653053 [debug] [Thread-2 (]: Finished running node test.alignd_de_project.not_null_stg_clients_province.72debe4514
+[0m01:18:03.653960 [debug] [Thread-2 (]: Began running node test.alignd_de_project.not_null_stg_products_product_id.6373b0acf3
+[0m01:18:03.654905 [info ] [Thread-2 (]: 15 of 20 START test not_null_stg_products_product_id ........................... [RUN]
+[0m01:18:03.661000 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly test.alignd_de_project.not_null_stg_clients_province.72debe4514, now test.alignd_de_project.not_null_stg_products_product_id.6373b0acf3)
+[0m01:18:03.661825 [debug] [Thread-2 (]: Began compiling node test.alignd_de_project.not_null_stg_products_product_id.6373b0acf3
+[0m01:18:03.669987 [debug] [Thread-2 (]: Writing injected SQL for node "test.alignd_de_project.not_null_stg_products_product_id.6373b0acf3"
+[0m01:18:03.673373 [debug] [Thread-2 (]: Began executing node test.alignd_de_project.not_null_stg_products_product_id.6373b0acf3
+[0m01:18:03.681000 [debug] [Thread-2 (]: Writing runtime sql for node "test.alignd_de_project.not_null_stg_products_product_id.6373b0acf3"
+[0m01:18:03.682997 [debug] [Thread-2 (]: Using postgres connection "test.alignd_de_project.not_null_stg_products_product_id.6373b0acf3"
+[0m01:18:03.683897 [debug] [Thread-2 (]: On test.alignd_de_project.not_null_stg_products_product_id.6373b0acf3: /* {"app": "dbt", "dbt_version": "1.11.8", "profile_name": "alignd_profile", "target_name": "dev", "node_id": "test.alignd_de_project.not_null_stg_products_product_id.6373b0acf3"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select product_id
+from "alignd_db"."alignd_staging"."stg_products"
+where product_id is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m01:18:03.684709 [debug] [Thread-2 (]: Opening a new connection, currently in state closed
+[0m01:18:03.794175 [debug] [Thread-4 (]: SQL status: SELECT 1 in 0.391 seconds
+[0m01:18:03.797010 [debug] [Thread-4 (]: On test.alignd_de_project.not_null_stg_health_lapses_policy_id.4daaa0f6b9: ROLLBACK
+[0m01:18:03.801026 [debug] [Thread-3 (]: SQL status: SELECT 1 in 0.401 seconds
+[0m01:18:03.804172 [debug] [Thread-3 (]: On test.alignd_de_project.not_null_stg_health_lapses_lapse_id.c8a3b65f20: ROLLBACK
+[0m01:18:03.805068 [debug] [Thread-4 (]: On test.alignd_de_project.not_null_stg_health_lapses_policy_id.4daaa0f6b9: Close
+[0m01:18:03.806020 [debug] [Thread-1 (]: SQL status: SELECT 1 in 0.937 seconds
+[0m01:18:03.808649 [debug] [Thread-1 (]: On test.alignd_de_project.not_null_stg_health_lapses_client_id.070f847522: ROLLBACK
+[0m01:18:03.809748 [info ] [Thread-4 (]: 14 of 20 PASS not_null_stg_health_lapses_policy_id ............................. [[32mPASS[0m in 0.43s]
+[0m01:18:03.816415 [debug] [Thread-4 (]: Finished running node test.alignd_de_project.not_null_stg_health_lapses_policy_id.4daaa0f6b9
+[0m01:18:03.817682 [debug] [Thread-4 (]: Began running node test.alignd_de_project.unique_dim_patients_client_id.740892f3ed
+[0m01:18:03.820929 [debug] [Thread-3 (]: On test.alignd_de_project.not_null_stg_health_lapses_lapse_id.c8a3b65f20: Close
+[0m01:18:03.818792 [info ] [Thread-4 (]: 16 of 20 START test unique_dim_patients_client_id .............................. [RUN]
+[0m01:18:03.822018 [debug] [Thread-1 (]: On test.alignd_de_project.not_null_stg_health_lapses_client_id.070f847522: Close
+[0m01:18:03.823065 [debug] [Thread-4 (]: Re-using an available connection from the pool (formerly test.alignd_de_project.not_null_stg_health_lapses_policy_id.4daaa0f6b9, now test.alignd_de_project.unique_dim_patients_client_id.740892f3ed)
+[0m01:18:03.825189 [debug] [Thread-4 (]: Began compiling node test.alignd_de_project.unique_dim_patients_client_id.740892f3ed
+[0m01:18:03.824155 [info ] [Thread-3 (]: 13 of 20 PASS not_null_stg_health_lapses_lapse_id .............................. [[32mPASS[0m in 0.45s]
+[0m01:18:03.842608 [debug] [Thread-4 (]: Writing injected SQL for node "test.alignd_de_project.unique_dim_patients_client_id.740892f3ed"
+[0m01:18:03.844006 [debug] [Thread-3 (]: Finished running node test.alignd_de_project.not_null_stg_health_lapses_lapse_id.c8a3b65f20
+[0m01:18:03.845263 [debug] [Thread-3 (]: Began running node test.alignd_de_project.unique_fct_patient_claims_summary_client_id.ee857848b1
+[0m01:18:03.847360 [debug] [Thread-4 (]: Began executing node test.alignd_de_project.unique_dim_patients_client_id.740892f3ed
+[0m01:18:03.851973 [debug] [Thread-4 (]: Writing runtime sql for node "test.alignd_de_project.unique_dim_patients_client_id.740892f3ed"
+[0m01:18:03.826359 [info ] [Thread-1 (]: 12 of 20 PASS not_null_stg_health_lapses_client_id ............................. [[32mPASS[0m in 0.98s]
+[0m01:18:03.853964 [debug] [Thread-1 (]: Finished running node test.alignd_de_project.not_null_stg_health_lapses_client_id.070f847522
+[0m01:18:03.855051 [debug] [Thread-1 (]: Began running node test.alignd_de_project.unique_stg_clients_client_id.892841d178
+[0m01:18:03.858693 [debug] [Thread-4 (]: Using postgres connection "test.alignd_de_project.unique_dim_patients_client_id.740892f3ed"
+[0m01:18:03.861376 [debug] [Thread-4 (]: On test.alignd_de_project.unique_dim_patients_client_id.740892f3ed: /* {"app": "dbt", "dbt_version": "1.11.8", "profile_name": "alignd_profile", "target_name": "dev", "node_id": "test.alignd_de_project.unique_dim_patients_client_id.740892f3ed"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+select
+    client_id as unique_field,
+    count(*) as n_records
+
+from "alignd_db"."alignd_marts"."dim_patients"
+where client_id is not null
+group by client_id
+having count(*) > 1
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m01:18:03.862525 [debug] [Thread-4 (]: Opening a new connection, currently in state closed
+[0m01:18:03.846222 [info ] [Thread-3 (]: 17 of 20 START test unique_fct_patient_claims_summary_client_id ................ [RUN]
+[0m01:18:03.864770 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly test.alignd_de_project.not_null_stg_health_lapses_lapse_id.c8a3b65f20, now test.alignd_de_project.unique_fct_patient_claims_summary_client_id.ee857848b1)
+[0m01:18:03.865615 [debug] [Thread-3 (]: Began compiling node test.alignd_de_project.unique_fct_patient_claims_summary_client_id.ee857848b1
+[0m01:18:03.855851 [info ] [Thread-1 (]: 18 of 20 START test unique_stg_clients_client_id ............................... [RUN]
+[0m01:18:03.874404 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.alignd_de_project.not_null_stg_health_lapses_client_id.070f847522, now test.alignd_de_project.unique_stg_clients_client_id.892841d178)
+[0m01:18:03.875669 [debug] [Thread-3 (]: Writing injected SQL for node "test.alignd_de_project.unique_fct_patient_claims_summary_client_id.ee857848b1"
+[0m01:18:03.877159 [debug] [Thread-2 (]: SQL status: SELECT 1 in 0.192 seconds
+[0m01:18:03.878734 [debug] [Thread-1 (]: Began compiling node test.alignd_de_project.unique_stg_clients_client_id.892841d178
+[0m01:18:03.882113 [debug] [Thread-2 (]: On test.alignd_de_project.not_null_stg_products_product_id.6373b0acf3: ROLLBACK
+[0m01:18:03.889916 [debug] [Thread-1 (]: Writing injected SQL for node "test.alignd_de_project.unique_stg_clients_client_id.892841d178"
+[0m01:18:03.891238 [debug] [Thread-3 (]: Began executing node test.alignd_de_project.unique_fct_patient_claims_summary_client_id.ee857848b1
+[0m01:18:03.898407 [debug] [Thread-3 (]: Writing runtime sql for node "test.alignd_de_project.unique_fct_patient_claims_summary_client_id.ee857848b1"
+[0m01:18:03.899839 [debug] [Thread-1 (]: Began executing node test.alignd_de_project.unique_stg_clients_client_id.892841d178
+[0m01:18:03.904119 [debug] [Thread-1 (]: Writing runtime sql for node "test.alignd_de_project.unique_stg_clients_client_id.892841d178"
+[0m01:18:03.905872 [debug] [Thread-3 (]: Using postgres connection "test.alignd_de_project.unique_fct_patient_claims_summary_client_id.ee857848b1"
+[0m01:18:03.907401 [debug] [Thread-1 (]: Using postgres connection "test.alignd_de_project.unique_stg_clients_client_id.892841d178"
+[0m01:18:03.910201 [debug] [Thread-1 (]: On test.alignd_de_project.unique_stg_clients_client_id.892841d178: /* {"app": "dbt", "dbt_version": "1.11.8", "profile_name": "alignd_profile", "target_name": "dev", "node_id": "test.alignd_de_project.unique_stg_clients_client_id.892841d178"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+select
+    client_id as unique_field,
+    count(*) as n_records
+
+from "alignd_db"."alignd_staging"."stg_clients"
+where client_id is not null
+group by client_id
+having count(*) > 1
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m01:18:03.911738 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m01:18:03.908905 [debug] [Thread-3 (]: On test.alignd_de_project.unique_fct_patient_claims_summary_client_id.ee857848b1: /* {"app": "dbt", "dbt_version": "1.11.8", "profile_name": "alignd_profile", "target_name": "dev", "node_id": "test.alignd_de_project.unique_fct_patient_claims_summary_client_id.ee857848b1"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+select
+    client_id as unique_field,
+    count(*) as n_records
+
+from "alignd_db"."alignd_marts"."fct_patient_claims_summary"
+where client_id is not null
+group by client_id
+having count(*) > 1
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m01:18:03.913994 [debug] [Thread-3 (]: Opening a new connection, currently in state closed
+[0m01:18:03.918360 [debug] [Thread-2 (]: On test.alignd_de_project.not_null_stg_products_product_id.6373b0acf3: Close
+[0m01:18:03.920024 [info ] [Thread-2 (]: 15 of 20 PASS not_null_stg_products_product_id ................................. [[32mPASS[0m in 0.26s]
+[0m01:18:03.925165 [debug] [Thread-2 (]: Finished running node test.alignd_de_project.not_null_stg_products_product_id.6373b0acf3
+[0m01:18:03.926562 [debug] [Thread-2 (]: Began running node test.alignd_de_project.unique_stg_health_lapses_lapse_id.a954459c68
+[0m01:18:03.927583 [info ] [Thread-2 (]: 19 of 20 START test unique_stg_health_lapses_lapse_id .......................... [RUN]
+[0m01:18:03.932147 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly test.alignd_de_project.not_null_stg_products_product_id.6373b0acf3, now test.alignd_de_project.unique_stg_health_lapses_lapse_id.a954459c68)
+[0m01:18:03.933064 [debug] [Thread-2 (]: Began compiling node test.alignd_de_project.unique_stg_health_lapses_lapse_id.a954459c68
+[0m01:18:03.940917 [debug] [Thread-2 (]: Writing injected SQL for node "test.alignd_de_project.unique_stg_health_lapses_lapse_id.a954459c68"
+[0m01:18:03.944087 [debug] [Thread-2 (]: Began executing node test.alignd_de_project.unique_stg_health_lapses_lapse_id.a954459c68
+[0m01:18:03.949175 [debug] [Thread-2 (]: Writing runtime sql for node "test.alignd_de_project.unique_stg_health_lapses_lapse_id.a954459c68"
+[0m01:18:03.951154 [debug] [Thread-2 (]: Using postgres connection "test.alignd_de_project.unique_stg_health_lapses_lapse_id.a954459c68"
+[0m01:18:03.952073 [debug] [Thread-2 (]: On test.alignd_de_project.unique_stg_health_lapses_lapse_id.a954459c68: /* {"app": "dbt", "dbt_version": "1.11.8", "profile_name": "alignd_profile", "target_name": "dev", "node_id": "test.alignd_de_project.unique_stg_health_lapses_lapse_id.a954459c68"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+select
+    lapse_id as unique_field,
+    count(*) as n_records
+
+from "alignd_db"."alignd_staging"."stg_health_lapses"
+where lapse_id is not null
+group by lapse_id
+having count(*) > 1
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m01:18:03.953017 [debug] [Thread-2 (]: Opening a new connection, currently in state closed
+[0m01:18:04.010109 [debug] [Thread-4 (]: SQL status: SELECT 1 in 0.148 seconds
+[0m01:18:04.012929 [debug] [Thread-4 (]: On test.alignd_de_project.unique_dim_patients_client_id.740892f3ed: ROLLBACK
+[0m01:18:04.020047 [debug] [Thread-4 (]: On test.alignd_de_project.unique_dim_patients_client_id.740892f3ed: Close
+[0m01:18:04.022336 [info ] [Thread-4 (]: 16 of 20 PASS unique_dim_patients_client_id .................................... [[32mPASS[0m in 0.20s]
+[0m01:18:04.031060 [debug] [Thread-4 (]: Finished running node test.alignd_de_project.unique_dim_patients_client_id.740892f3ed
+[0m01:18:04.032019 [debug] [Thread-4 (]: Began running node test.alignd_de_project.unique_stg_products_product_id.7d950a1467
+[0m01:18:04.033914 [debug] [Thread-1 (]: SQL status: SELECT 1 in 0.122 seconds
+[0m01:18:04.036729 [debug] [Thread-1 (]: On test.alignd_de_project.unique_stg_clients_client_id.892841d178: ROLLBACK
+[0m01:18:04.033071 [info ] [Thread-4 (]: 20 of 20 START test unique_stg_products_product_id ............................. [RUN]
+[0m01:18:04.038837 [debug] [Thread-4 (]: Re-using an available connection from the pool (formerly test.alignd_de_project.unique_dim_patients_client_id.740892f3ed, now test.alignd_de_project.unique_stg_products_product_id.7d950a1467)
+[0m01:18:04.040094 [debug] [Thread-4 (]: Began compiling node test.alignd_de_project.unique_stg_products_product_id.7d950a1467
+[0m01:18:04.047494 [debug] [Thread-4 (]: Writing injected SQL for node "test.alignd_de_project.unique_stg_products_product_id.7d950a1467"
+[0m01:18:04.049722 [debug] [Thread-4 (]: Began executing node test.alignd_de_project.unique_stg_products_product_id.7d950a1467
+[0m01:18:04.054897 [debug] [Thread-4 (]: Writing runtime sql for node "test.alignd_de_project.unique_stg_products_product_id.7d950a1467"
+[0m01:18:04.057693 [debug] [Thread-4 (]: Using postgres connection "test.alignd_de_project.unique_stg_products_product_id.7d950a1467"
+[0m01:18:04.059373 [debug] [Thread-4 (]: On test.alignd_de_project.unique_stg_products_product_id.7d950a1467: /* {"app": "dbt", "dbt_version": "1.11.8", "profile_name": "alignd_profile", "target_name": "dev", "node_id": "test.alignd_de_project.unique_stg_products_product_id.7d950a1467"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+select
+    product_id as unique_field,
+    count(*) as n_records
+
+from "alignd_db"."alignd_staging"."stg_products"
+where product_id is not null
+group by product_id
+having count(*) > 1
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m01:18:04.061134 [debug] [Thread-4 (]: Opening a new connection, currently in state closed
+[0m01:18:04.105037 [debug] [Thread-1 (]: On test.alignd_de_project.unique_stg_clients_client_id.892841d178: Close
+[0m01:18:04.106696 [info ] [Thread-1 (]: 18 of 20 PASS unique_stg_clients_client_id ..................................... [[32mPASS[0m in 0.23s]
+[0m01:18:04.116121 [debug] [Thread-1 (]: Finished running node test.alignd_de_project.unique_stg_clients_client_id.892841d178
+[0m01:18:04.177777 [debug] [Thread-2 (]: SQL status: SELECT 1 in 0.225 seconds
+[0m01:18:04.180386 [debug] [Thread-2 (]: On test.alignd_de_project.unique_stg_health_lapses_lapse_id.a954459c68: ROLLBACK
+[0m01:18:04.198502 [debug] [Thread-3 (]: SQL status: SELECT 1 in 0.285 seconds
+[0m01:18:04.201030 [debug] [Thread-3 (]: On test.alignd_de_project.unique_fct_patient_claims_summary_client_id.ee857848b1: ROLLBACK
+[0m01:18:04.206016 [debug] [Thread-2 (]: On test.alignd_de_project.unique_stg_health_lapses_lapse_id.a954459c68: Close
+[0m01:18:04.207656 [info ] [Thread-2 (]: 19 of 20 PASS unique_stg_health_lapses_lapse_id ................................ [[32mPASS[0m in 0.28s]
+[0m01:18:04.214617 [debug] [Thread-2 (]: Finished running node test.alignd_de_project.unique_stg_health_lapses_lapse_id.a954459c68
+[0m01:18:04.228114 [debug] [Thread-3 (]: On test.alignd_de_project.unique_fct_patient_claims_summary_client_id.ee857848b1: Close
+[0m01:18:04.229388 [info ] [Thread-3 (]: 17 of 20 PASS unique_fct_patient_claims_summary_client_id ...................... [[32mPASS[0m in 0.36s]
+[0m01:18:04.248101 [debug] [Thread-3 (]: Finished running node test.alignd_de_project.unique_fct_patient_claims_summary_client_id.ee857848b1
+[0m01:18:04.298247 [debug] [Thread-4 (]: SQL status: SELECT 1 in 0.237 seconds
+[0m01:18:04.301003 [debug] [Thread-4 (]: On test.alignd_de_project.unique_stg_products_product_id.7d950a1467: ROLLBACK
+[0m01:18:04.305288 [debug] [Thread-4 (]: On test.alignd_de_project.unique_stg_products_product_id.7d950a1467: Close
+[0m01:18:04.307255 [info ] [Thread-4 (]: 20 of 20 PASS unique_stg_products_product_id ................................... [[32mPASS[0m in 0.27s]
+[0m01:18:04.310335 [debug] [Thread-4 (]: Finished running node test.alignd_de_project.unique_stg_products_product_id.7d950a1467
+[0m01:18:04.314194 [debug] [MainThread]: On master: COMMIT
+[0m01:18:04.315005 [debug] [MainThread]: Using postgres connection "master"
+[0m01:18:04.315954 [debug] [MainThread]: On master: COMMIT
+[0m01:18:04.316897 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m01:18:04.367784 [debug] [MainThread]: SQL status: COMMIT in 0.051 seconds
+[0m01:18:04.368538 [debug] [MainThread]: On master: Close
+[0m01:18:04.369717 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m01:18:04.370580 [debug] [MainThread]: Connection 'list_alignd_db_alignd_marts' was properly closed.
+[0m01:18:04.371410 [debug] [MainThread]: Connection 'list_alignd_db_alignd_staging' was properly closed.
+[0m01:18:04.372157 [debug] [MainThread]: Connection 'test.alignd_de_project.unique_fct_patient_claims_summary_client_id.ee857848b1' was properly closed.
+[0m01:18:04.372833 [debug] [MainThread]: Connection 'test.alignd_de_project.unique_stg_products_product_id.7d950a1467' was properly closed.
+[0m01:18:04.373835 [debug] [MainThread]: Connection 'test.alignd_de_project.unique_stg_health_lapses_lapse_id.a954459c68' was properly closed.
+[0m01:18:04.374507 [debug] [MainThread]: Connection 'test.alignd_de_project.unique_stg_clients_client_id.892841d178' was properly closed.
+[0m01:18:04.375850 [info ] [MainThread]: 
+[0m01:18:04.377294 [info ] [MainThread]: Finished running 20 data tests in 0 hours 0 minutes and 2.97 seconds (2.97s).
+[0m01:18:04.385108 [debug] [MainThread]: Command end result
+[0m01:18:04.466239 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\Godfrey\Desktop\alignd-data-engineering-assessment\dbt_project\target\manifest.json
+[0m01:18:04.473904 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\Godfrey\Desktop\alignd-data-engineering-assessment\dbt_project\target\semantic_manifest.json
+[0m01:18:04.492002 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\Godfrey\Desktop\alignd-data-engineering-assessment\dbt_project\target\run_results.json
+[0m01:18:04.492821 [info ] [MainThread]: 
+[0m01:18:04.494073 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m01:18:04.495419 [info ] [MainThread]: 
+[0m01:18:04.497131 [info ] [MainThread]: Done. PASS=20 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=20
+[0m01:18:04.499659 [debug] [MainThread]: Command `dbt test` succeeded at 01:18:04.499402 after 5.47 seconds
+[0m01:18:04.500496 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002141FAF93D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002142147BCD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002142147BAC0>]}
+[0m01:18:04.501365 [debug] [MainThread]: Flushing usage events
+[0m01:18:06.119775 [debug] [MainThread]: An error was encountered while trying to flush usage events

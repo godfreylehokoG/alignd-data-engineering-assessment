@@ -1,0 +1,30 @@
+# ============================================================
+# Poetry Project Configuration
+# Alignd Data Engineering Assessment
+#
+# Manages Python dependencies for the data pipeline.
+# Usage:
+#   poetry install       — Install all dependencies
+#   poetry run python scripts/clean_health_products.py
+#   poetry run python scripts/load_to_postgres.py
+# ============================================================
+
+[tool.poetry]
+name = "alignd-de-assessment"
+version = "1.0.0"
+description = "Data Engineering Assessment: Resilient Pipelines"
+authors = ["Lehlohonolo"]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+pandas = "^2.0"
+boto3 = "^1.28"
+pyarrow = "^14.0"
+psycopg2-binary = "^2.9"
+dbt-postgres = "^1.7"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

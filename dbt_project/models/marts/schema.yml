@@ -25,7 +25,8 @@ models:
         tests:
           - not_null
           - accepted_values:
-              values: ['Gauteng', 'Western Cape', 'KZN']
+              arguments:
+                values: ['Gauteng', 'Western Cape', 'KZN']
 
   - name: fct_patient_claims_summary
     description: >

@@ -145,6 +145,28 @@ product_id = products[(policy_id % num_products)]
 
 ---
 
+### AD-007: Data Privacy & POPIA Considerations
+
+**Context:** Alignd operates in the healthcare space where patient 
+data is governed by POPIA (Protection of Personal Information Act, 
+2013). While this assessment uses synthetic/test data, the pipeline 
+is designed with production data privacy in mind.
+
+**Measures taken:**
+- Client names are not propagated to analytical/fact tables
+- The `dim_patients` dbt model uses only `client_id` as identifier
+- In production, the following additional measures would apply:
+  - Column-level encryption for PII fields (name, income)
+  - Role-based access control in PostgreSQL
+  - Data masking in non-production environments
+  - Audit logging for all PII access
+  - Retention policies aligned with POPIA Section 14
+
+**Design principle:** Only the minimum necessary personal information 
+should flow into analytical models. The star schema separates PII 
+(in dim_clients) from transactional data (in fct_health_lapses), 
+enabling access control at the table level.
+
 ## 📁 Task Implementation Notes
 
 ### Task 1: Resilient Cloud ETL (AWS)
@@ -205,3 +227,4 @@ product_id = products[(policy_id % num_products)]
 | 2024-04-23 | Task 5 dbt models complete | Task 5 |
 | 2024-04-23 | Project implementation finalized | All |
 | | | |
+
