@@ -1,0 +1,12 @@
+alignd_profile:
+  target: dev
+  outputs:
+    dev:
+      type: postgres
+      host: localhost
+      port: 5432
+      user: alignd_user
+      pass: alignd_pass
+      dbname: alignd_db
+      schema: alignd
+      threads: 4
