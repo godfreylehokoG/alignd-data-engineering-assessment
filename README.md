@@ -1,8 +1,5 @@
 # Alignd Data Engineering Assessment: Resilient Pipelines
 
-## 👤 Candidate
-**Lehlohonolo [Your Last Name]**
-
 ---
 
 ## Overview
@@ -280,6 +277,5 @@ alignd-data-engineering-assessment/
 ##  Detailed Decisions
 
 For architectural decisions, data assessment, and implementation rationale, see [Technical Decisions Record](docs/TECHNICAL_DECISIONS.md).
-```
 
 
