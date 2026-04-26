@@ -14,3 +14,5 @@ data_files/cleaned/
 # OS
 .DS_Store
 Thumbs.db
+lambda_package/
+lambda_deployment.zip
