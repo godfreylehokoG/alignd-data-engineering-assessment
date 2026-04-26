@@ -7,24 +7,24 @@
 
 ---
 
-## 📋 Project Context
+## Project Context
 
 | Item | Detail |
 |------|--------|
 | **Role** | Data Engineer |
-| **Company** | Alignd — Healthcare financing solutions |
+| **Company** | Alignd  Healthcare financing solutions |
 | **Domain** | Health insurance data (clients, products, policy lapses) |
 | **Tech Stack** | AWS, Python, PostgreSQL, dbt, Docker, Poetry |
 | **Data Volume** | 8 clients, 5 products, 100 policy records |
 
 ---
 
-## 📊 Data Assessment
+## Data Assessment
 
 ### clients.csv
 - **Records:** 9 rows (8 unique clients)
 - **Issues Found:**
-  - Duplicate: `client_id = 4` (Alice Vane) — exact duplicate row
+  - Duplicate: `client_id = 4` (Alice Vane)  exact duplicate row
   - NULL income: `client_id` 3, 5, 8 (37.5% missing)
 - **Provinces:** Gauteng, Western Cape, KZN
 
@@ -46,7 +46,7 @@
 
 ---
 
-## 🏗️ Architecture Decisions
+## Architecture Decisions
 
 ### AD-001: Star Schema Design
 
@@ -99,7 +99,7 @@ dim_products ─┘
 **Rationale:** 
 - Window functions are the industry standard for deduplication
 - Keeps the first occurrence based on natural row order
-- Non-destructive — original data is preserved in raw tables
+- Non-destructive  original data is preserved in raw tables
 
 ---
 
@@ -167,7 +167,7 @@ should flow into analytical models. The star schema separates PII
 (in dim_clients) from transactional data (in fct_health_lapses), 
 enabling access control at the table level.
 
-## 📁 Task Implementation Notes
+## Task Implementation Notes
 
 ### Task 1: Resilient Cloud ETL (AWS)
 - **Lambda Name:** `ll-etl-function`
@@ -204,9 +204,9 @@ enabling access control at the table level.
 
 ---
 
-## 🔄 Scaling Strategy (100x Volume)
+## Scaling Strategy (100x Volume)
 
-*To be completed after implementation — will address:*
+*To be completed after implementation  will address:*
 - S3 partitioning by date
 - Lambda concurrency and Step Functions
 - PostgreSQL partitioning / migration to Redshift
@@ -215,7 +215,7 @@ enabling access control at the table level.
 
 ---
 
-## 📝 Change Log
+## Change Log
 
 | Date | Change | Task |
 |------|--------|------|
