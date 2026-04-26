@@ -219,12 +219,11 @@ enabling access control at the table level.
 
 | Date | Change | Task |
 |------|--------|------|
-| 2024-04-23 | Initial data assessment complete | All |
-| 2024-04-23 | Task 2 script complete | Task 2 |
-| 2024-04-23 | Task 1 ETL handler complete | Task 1 |
-| 2024-04-23 | Task 3 Star Schema DDL complete | Task 3 |
-| 2024-04-23 | Task 4 SQL transformations complete | Task 4 |
-| 2024-04-23 | Task 5 dbt models complete | Task 5 |
-| 2024-04-23 | Project implementation finalized | All |
-| | | |
+| 2026-04-23 | Initial data assessment complete | All |
+| 2026-04-23 | Task 2 script complete | Task 2 |
+| 2026-04-24 | Task 3 Star Schema DDL complete | Task 3 |
+| 2026-04-24 | Task 4 SQL transformations complete | Task 4 |
+| 2026-04-24 | Task 5 dbt models complete | Task 5 |
+| 2026-04-25 | Task 1 ETL handler complete | Task 1 |
+| 2026-04-26 | README and documentation finalized | All |
 
