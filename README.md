@@ -4,7 +4,7 @@
 
 ## Overview
 
-End-to-end data pipeline for processing healthcare data — from raw file ingestion through cloud ETL, data cleaning, warehouse modelling, quality checks, and automated transformations.
+End-to-end data pipeline for processing healthcare data  from raw file ingestion through cloud ETL, data cleaning, warehouse modelling, quality checks, and automated transformations.
 
 The pipeline processes three healthcare datasets (clients, products, policy lapses), loads them into a PostgreSQL star schema, applies data quality transformations, and produces analytics-ready models via dbt.
 
@@ -116,17 +116,17 @@ dbt test
   - Programmatic metadata header detection (not hardcoded)
   - Programmatic delimiter detection (tests multiple delimiters)
   - Product ID casing standardization
-  - Idempotent — safe to run multiple times
+  - Idempotent  safe to run multiple times
 
 ### Task 3: Schema Design & Modelling
 - **Schema:** Star schema in PostgreSQL (`alignd` schema)
 - **Tables:**
-  - `dim_clients` — Patient demographics (PII flagged)
-  - `dim_products` — Health insurance products
-  - `dim_date` — Calendar dimension
-  - `dim_policy` — Bridge table (synthetic mapping, see AD-006)
-  - `fct_health_lapses` — Core fact table
-  - `v_dim_patients` — Anonymized view (POPIA compliance)
+  - `dim_clients`  Patient demographics (PII flagged)
+  - `dim_products`  Health insurance products
+  - `dim_date`  Calendar dimension
+  - `dim_policy`  Bridge table (synthetic mapping, see AD-006)
+  - `fct_health_lapses`  Core fact table
+  - `v_dim_patients`  Anonymized view (POPIA compliance)
 - **Indexes:** All FK columns and commonly filtered columns indexed
 - **Data Loading:** `scripts/load_to_postgres.py` reads from source files programmatically
 
@@ -140,11 +140,11 @@ dbt test
 
 ### Task 5: dbt + Docker
 - **Models:** 5 total (3 staging views + 2 mart tables)
-  - `stg_clients` — Deduplicated, income-imputed
-  - `stg_products` — Clean pass-through
-  - `stg_health_lapses` — Enriched with policy bridge
-  - `dim_patients` — POPIA-compliant (name excluded)
-  - `fct_patient_claims_summary` — Aggregated per client with lapse rate
+  - `stg_clients`  Deduplicated, income-imputed
+  - `stg_products`  Clean pass-through
+  - `stg_health_lapses`  Enriched with policy bridge
+  - `dim_patients`  POPIA-compliant (name excluded)
+  - `fct_patient_claims_summary`  Aggregated per client with lapse rate
 - **Tests:** 20 tests, all passing (unique, not_null, accepted_values)
 - **Docker:** Enhanced Dockerfile with Poetry support
 
