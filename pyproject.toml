@@ -4,7 +4,7 @@
 #
 # Manages Python dependencies for the data pipeline.
 # Usage:
-#   poetry install       — Install all dependencies
+#   poetry install        Install all dependencies
 #   poetry run python scripts/clean_health_products.py
 #   poetry run python scripts/load_to_postgres.py
 # ============================================================

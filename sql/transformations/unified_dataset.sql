@@ -49,14 +49,14 @@ WHERE rn = 1;
 -- ------------------------------------------------------------
 -- Impute NULL income values using province-level median
 --
--- AD-002: Strategy — Province-Level Median
+-- AD-002: Strategy  Province-Level Median
 --
 -- Justification:
 --   1. Income varies significantly by region in South Africa.
 --      Gauteng and Western Cape typically have higher median
 --      incomes than KwaZulu-Natal.
 --   2. Median is preferred over mean because income 
---      distributions are typically right-skewed — a few 
+--      distributions are typically right-skewed  a few 
 --      high earners would inflate the mean.
 --   3. Mode is inappropriate for continuous numerical data.
 --   4. Group-based imputation preserves regional patterns

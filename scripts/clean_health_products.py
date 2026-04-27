@@ -108,7 +108,7 @@ def clean_data(rows: list, columns: list) -> list:
         if len(row) != expected_cols:
             logger.warning(
                 f"Row {i+1} skipped: expected {expected_cols} columns, "
-                f"got {len(row)} — data: {row}"
+                f"got {len(row)}  data: {row}"
             )
             continue
 
@@ -129,7 +129,7 @@ def clean_health_products(input_path: str, output_path: str) -> None:
     """
     Main cleaning pipeline for health_products.txt.
     
-    This function is idempotent — running it multiple times
+    This function is idempotent  running it multiple times
     produces the same output. The output file is fully
     overwritten on each run to ensure consistency.
     """

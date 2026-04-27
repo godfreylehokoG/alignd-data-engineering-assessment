@@ -3,7 +3,7 @@ Task 3: Data Loading Script
 Loads cleaned data files into PostgreSQL star schema.
 
 This script reads from the actual source/cleaned files,
-not hardcoded values — designed to handle future data.
+not hardcoded values  designed to handle future data.
 """
 
 import os
@@ -41,7 +41,7 @@ def load_dim_clients(conn, filepath: str) -> None:
     """
     Load clients from CSV into dim_clients.
     
-    Handles deduplication at load time — if a client_id
+    Handles deduplication at load time  if a client_id
     already exists, it is skipped (ON CONFLICT DO NOTHING).
     This makes the script idempotent.
     """
@@ -155,7 +155,7 @@ def load_fct_health_lapses(conn, filepath: str) -> None:
     """
     Load health lapses from parquet file into fact table.
     
-    Reads the original parquet file directly — in production,
+    Reads the original parquet file directly  in production,
     this would read from the Lambda-converted CSV in S3.
     """
     df = pd.read_parquet(filepath)
